@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a25fd20d-f5d3-4b34-93a6-c10846495ffe" name="Changes" comment="Base Commit">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a25fd20d-f5d3-4b34-93a6-c10846495ffe" name="Changes" comment="added new comment" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +18,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
@@ -51,8 +52,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Himal__Branch",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -74,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1726416715325</updated>
       <workItem from="1726416716360" duration="58000" />
-      <workItem from="1727983599423" duration="83000" />
+      <workItem from="1727983599423" duration="429000" />
     </task>
     <task id="LOCAL-00001" summary="Base Commit">
       <option name="closed" value="true" />
@@ -84,14 +89,51 @@
       <option name="project" value="LOCAL" />
       <updated>1726416757068</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added new comment">
+      <option name="closed" value="true" />
+      <created>1727983745497</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1727983745497</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added new comment">
+      <option name="closed" value="true" />
+      <created>1727983889177</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1727983889177</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ID_WIDTH">
+                <map>
+                  <entry key="Table.Default.Author.ColumnIdWidth" value="147" />
+                  <entry key="Table.Default.Date.ColumnIdWidth" value="131" />
+                  <entry key="Table.GitHub.CommitStatus.ColumnIdWidth" value="131" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Base Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Base Commit" />
+    <MESSAGE value="new comment" />
+    <MESSAGE value="added new comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new comment" />
   </component>
 </project>
