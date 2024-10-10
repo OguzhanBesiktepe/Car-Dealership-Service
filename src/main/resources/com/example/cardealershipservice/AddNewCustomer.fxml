@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.cardealershipservice.AddNewCustomerController" style="-fx-padding: 20px;">
+    <Label text="Add New Customer" style="-fx-font-size: 24;" />
+
+    <TextField fx:id="nameField" promptText="First  Last Name" />
+    <TextField fx:id="contactInfoField" promptText="Contact Information" />
+    <TextField fx:id="carModelField" promptText="Car Model" />
+    <TextField fx:id="vinField" promptText="VIN Number" />
+    <TextField fx:id="mileageField" promptText="Mileage" />
+
+    <Button text="Confirm" fx:id="confirmButton" onAction="#handleConfirm" />
+    <Button text="Back" fx:id="backButton" onAction="#handleBack" style="-fx-background-color: gray; -fx-text-fill: white;" />
+</VBox>
+

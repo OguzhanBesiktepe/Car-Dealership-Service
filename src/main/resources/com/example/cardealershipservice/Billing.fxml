@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.cardealershipservice.BillingController" hgap="10" vgap="10" style="-fx-padding: 20px;">
+
+    <Label text="Customer Information" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <Label text="Waleed Shahid" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <Label text="Services Completed" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+    <Label text="Oil Change: $50" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+    <!-- Back Button -->
+    <Button text="Back" fx:id="backButton" onAction="#handleBack" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+</GridPane>
+

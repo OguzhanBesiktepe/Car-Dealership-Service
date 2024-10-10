@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.cardealershipservice.ServiceQueueController" hgap="10" vgap="10" style="-fx-padding: 20px;">
+
+    <Label text="Waiting for Service" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <VBox spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <Label text="Oguzhan Besiktepe" />
+        <Label text="Himal Shrestha" />
+    </VBox>
+
+    <Label text="Currently in Service" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+    <VBox spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <Label text="Khalid Nadeem" />
+        <Label text="Waleed Shahid" />
+    </VBox>
+
+    <!-- Buttons for Billing, Add/Remove Service, Add New Customer -->
+    <Button text="Go to Billing" fx:id="goToBillingButton" onAction="#handleGoToBilling" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+    <Button text="+" fx:id="plusButton" onAction="#handleAddService" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+    <Button text="-" fx:id="minusButton" onAction="#handleRemoveService" GridPane.rowIndex="2" GridPane.columnIndex="2" />
+    <Button text="Add New Customer" fx:id="addNewCustomerButton" onAction="#handleAddNewCustomer" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+
+    <!-- Back Button -->
+    <Button text="Back" fx:id="backButton" onAction="#handleBack" GridPane.rowIndex="4" GridPane.columnIndex="0" />
+</GridPane>
+
