@@ -4,11 +4,11 @@
 
 I'm currently working on some exciting features for our service:
 
-### 🌗 Light Mode & Dark Mode (work in progress)
+### 🌗 Light Mode & Dark Mode (work in progress) 10/16/24
 - Bringing a sleek and user-friendly **Light Mode/Dark Mode** toggle to enhance user experience across different environments and preferences.
 - Easily switch between modes for comfortable viewing whether you're browsing during the day or at night!
 
-### 🔐 Password Strength Meter (work in progress)
+### 🔐 Password Strength Meter (work in progress) 10/16/24
 - Implementing a **Password Strength Meter** to help users create more secure passwords.
 - Visual indicators will guide you in setting stronger, safer passwords, ensuring better security for your account.
 
