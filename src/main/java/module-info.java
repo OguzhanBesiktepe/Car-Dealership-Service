@@ -1,8 +1,7 @@
 module com.example.cardealershipservice {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.desktop;
 
 
-    opens com.example.cardealershipservice to javafx.fxml;
-    exports com.example.cardealershipservice;
 }
