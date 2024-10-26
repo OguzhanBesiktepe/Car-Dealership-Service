@@ -1,9 +1,5 @@
 package com.example.cardealershipservice;
-/**
- * Himal Shrestha
- * CSC 325 - Softare Engineering
- */
-
+//Himal original button
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
