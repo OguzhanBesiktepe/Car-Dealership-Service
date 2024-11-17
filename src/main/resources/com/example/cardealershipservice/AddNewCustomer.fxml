@@ -3,16 +3,15 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.cardealershipservice.AddNewCustomerController" style="-fx-padding: 20px;">
-    <Label text="Add New Customer" style="-fx-font-size: 24;" />
+<VBox spacing="15" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.cardealershipservice.AddNewCustomerController" stylesheets="@styles.css">
+    <Label text="Add New Customer" styleClass="label-title" />
 
-    <TextField fx:id="nameField" promptText="First  Last Name" />
-    <TextField fx:id="contactInfoField" promptText="Contact Information" />
-    <TextField fx:id="carModelField" promptText="Car Model" />
-    <TextField fx:id="vinField" promptText="VIN Number" />
-    <TextField fx:id="mileageField" promptText="Mileage" />
+    <TextField fx:id="nameField" promptText="First , Last Name" styleClass="text-field" />
+    <TextField fx:id="contactInfoField" promptText="Contact Information" styleClass="text-field" />
+    <TextField fx:id="carModelField" promptText="Car Model" styleClass="text-field" />
+    <TextField fx:id="vinField" promptText="VIN Number" styleClass="text-field" />
+    <TextField fx:id="mileageField" promptText="Mileage" styleClass="text-field" />
 
-    <Button text="Confirm" fx:id="confirmButton" onAction="#handleConfirm" />
-    <Button text="Back" fx:id="backButton" onAction="#handleBack" style="-fx-background-color: gray; -fx-text-fill: white;" />
+    <Button text="Confirm" fx:id="confirmButton" onAction="#handleConfirm" styleClass="button-primary" />
+    <Button text="Back" fx:id="backButton" onAction="#handleBack" styleClass="button-secondary" />
 </VBox>
-

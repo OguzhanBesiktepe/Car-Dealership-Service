@@ -3,14 +3,30 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.cardealershipservice.BillingController" hgap="10" vgap="10" style="-fx-padding: 20px;">
+<GridPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.cardealershipservice.ServiceQueueController" hgap="15" vgap="15" stylesheets="@styles.css">
 
-    <Label text="Customer Information" GridPane.columnIndex="0" GridPane.rowIndex="0" />
-    <Label text="Waleed Shahid" GridPane.columnIndex="0" GridPane.rowIndex="1" />
-    <Label text="Services Completed" GridPane.columnIndex="1" GridPane.rowIndex="0" />
-    <Label text="Oil Change: $50" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <!-- Waiting for Service Section -->
+    <Label text="Waiting for Service" styleClass="label-section" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <TextField fx:id="waitingNameField" promptText="Customer Name" styleClass="text-field" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <Button text="Add to Waiting" fx:id="addWaitingButton" onAction="#handleAddToWaiting" styleClass="button-primary" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <VBox fx:id="waitingList" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="3">
+        <!-- Waiting customers will be added dynamically here -->
+    </VBox>
+
+    <!-- Currently in Service Section -->
+    <Label text="Currently in Service" styleClass="label-section" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+    <TextField fx:id="serviceNameField" promptText="Customer Name" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <Button text="Add to Service" fx:id="addServiceButton" onAction="#handleAddToService" styleClass="button-primary" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    <VBox fx:id="serviceList" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <!-- In-service customers will be added dynamically here -->
+    </VBox>
+
+    <!-- Navigation Buttons -->
+    <Button text="Go to Billing" fx:id="goToBillingButton" onAction="#handleGoToBilling" styleClass="button-Billing" GridPane.rowIndex="4" GridPane.columnIndex="0" />
+    <Button text="Add New Customer" fx:id="addNewCustomerButton" onAction="#handleAddNewCustomer" styleClass="button-AddCustomer" GridPane.rowIndex="4" GridPane.columnIndex="1" />
+    <Button text="Add Accessories" fx:id="goToAccessoriesButton" onAction="#handleGoToAccessories" styleClass="button-Accessories" GridPane.rowIndex="5" GridPane.columnIndex="0" />
+    <Button text="Add Service Details" fx:id="goToServiceDetailsButton" onAction="#handleGoToServiceDetails" styleClass="button-ServiceDetails" GridPane.rowIndex="5" GridPane.columnIndex="1" />
 
     <!-- Back Button -->
-    <Button text="Back" fx:id="backButton" onAction="#handleBack" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+    <Button text="Back" fx:id="backButton" onAction="#handleBack" styleClass="button-secondary" GridPane.rowIndex="6" GridPane.columnIndex="0" />
 </GridPane>
-

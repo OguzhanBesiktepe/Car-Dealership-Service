@@ -1,8 +1,8 @@
 package com.example.cardealershipservice;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -21,34 +21,35 @@ public class AddNewCustomerController {
     @FXML
     private TextField mileageField;
 
+    private FirestoreService firestoreService = new FirestoreService();
+
     @FXML
     private Button confirmButton;
 
     @FXML
     private void handleConfirm() {
-        // Capture the inputted data
-        String name = nameField.getText();
-        String contactInfo = contactInfoField.getText();
-        String carModel = carModelField.getText();
-        String vin = vinField.getText();
-        String mileage = mileageField.getText();
+        try {
+            String name = nameField.getText();
+            String contactInfo = contactInfoField.getText();
+            String carModel = carModelField.getText();
+            String vin = vinField.getText();
+            String mileage = mileageField.getText();
 
-        System.out.println("New Customer Added: " + name);
+            firestoreService.addCustomer(name, contactInfo, carModel, vin, mileage);
+            System.out.println("Customer data saved successfully.");
 
-        // After confirming, return to the service queue screen
-        handleBack();
+            handleBack();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
-
-    @FXML
-    private Button backButton;
 
     @FXML
     private void handleBack() {
         try {
             Parent serviceQueuePage = FXMLLoader.load(getClass().getResource("/com/example/cardealershipservice/ServiceQueue.fxml"));
-            Scene serviceQueueScene = new Scene(serviceQueuePage);
-            Stage currentStage = (Stage) backButton.getScene().getWindow();
-            currentStage.setScene(serviceQueueScene);
+            Stage currentStage = (Stage) confirmButton.getScene().getWindow();
+            currentStage.setScene(new Scene(serviceQueuePage));
             currentStage.show();
         } catch (Exception e) {
             e.printStackTrace();

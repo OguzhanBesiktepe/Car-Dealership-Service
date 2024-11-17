@@ -3,12 +3,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox spacing="20" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.cardealershipservice.LoginController">
-    <Label text="Service Sync" style="-fx-font-size: 36;" />
-    <TextField fx:id="usernameField" promptText="Username" />
-    <PasswordField fx:id="passwordField" promptText="Password" />
-    <Button text="Login" fx:id="loginButton" onAction="#handleLoginAction" />
+<VBox spacing="15" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.cardealershipservice.LoginController" stylesheets="@styles.css">
+    <Label text="Service Sync" styleClass="label-title" />
+    <TextField fx:id="usernameField" promptText="Username" styleClass="text-field" />
+    <PasswordField fx:id="passwordField" promptText="Password" styleClass="text-field" />
+    <Button text="Login" fx:id="loginButton" onAction="#handleLoginAction" styleClass="button-primary" />
+    <Button fx:id="registerButton" text="Register" onAction="#handleRegisterRedirect" />
+    <Button fx:id="forgotPasswordButton" text="Forgot Password?" onAction="#handleForgotPassword" />
 </VBox>
-
-
-

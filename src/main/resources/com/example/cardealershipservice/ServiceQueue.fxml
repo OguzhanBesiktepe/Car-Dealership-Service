@@ -1,29 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
 
-<GridPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.cardealershipservice.ServiceQueueController" hgap="10" vgap="10" style="-fx-padding: 20px;">
+<GridPane alignment="CENTER" hgap="15" stylesheets="@styles.css" vgap="15" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cardealershipservice.ServiceQueueController">
 
-    <Label text="Waiting for Service" GridPane.columnIndex="0" GridPane.rowIndex="0" />
-    <VBox spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="1">
-        <Label text="Oguzhan Besiktepe" />
-        <Label text="Himal Shrestha" />
+    <!-- Column and Row Constraints for Scaling -->
+    <columnConstraints>
+        <ColumnConstraints percentWidth="50" />
+        <ColumnConstraints percentWidth="50" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="10.0" />
+        <RowConstraints percentHeight="10.0" />
+        <RowConstraints percentHeight="10.0" />
+        <RowConstraints percentHeight="30.0" />
+        <RowConstraints percentHeight="10.0" />
+        <RowConstraints percentHeight="10.0" />
+        <RowConstraints percentHeight="10.0" />
+    </rowConstraints>
+
+    <VBox alignment="CENTER" prefHeight="670.0" prefWidth="166.0" spacing="20" GridPane.rowSpan="4">
+        <Label styleClass="label-section" text="Waiting for Service" />
+         <TextField fx:id="waitingNameField" promptText="Customer Name" styleClass="text-field" />
+        <HBox alignment="TOP_CENTER" spacing="15">
+            <Button fx:id="addWaitingButton" onAction="#handleAddToWaiting" styleClass="button-primary" text="Add to Waiting" />
+        </HBox>
+        <VBox fx:id="waitingList" spacing="10">
+            <!-- Waiting customers will be added dynamically here -->
+        </VBox>
     </VBox>
+    <VBox fx:id="serviceList" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="3">
+      <children>
+          <Button fx:id="addServiceButton" onAction="#handleAddToService" prefHeight="42.0" prefWidth="471.0" styleClass="button-primary" text="Add to Service">
+            <padding>
+               <Insets bottom="100.0" />
+            </padding>
+         </Button>
+      </children></VBox>
 
-    <Label text="Currently in Service" GridPane.columnIndex="1" GridPane.rowIndex="0" />
-    <VBox spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="1">
-        <Label text="Khalid Nadeem" />
-        <Label text="Waleed Shahid" />
-    </VBox>
-
-    <!-- Buttons for Billing, Add/Remove Service, Add New Customer -->
-    <Button text="Go to Billing" fx:id="goToBillingButton" onAction="#handleGoToBilling" GridPane.rowIndex="2" GridPane.columnIndex="0" />
-    <Button text="+" fx:id="plusButton" onAction="#handleAddService" GridPane.rowIndex="2" GridPane.columnIndex="1" />
-    <Button text="-" fx:id="minusButton" onAction="#handleRemoveService" GridPane.rowIndex="2" GridPane.columnIndex="2" />
-    <Button text="Add New Customer" fx:id="addNewCustomerButton" onAction="#handleAddNewCustomer" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+    <!-- Navigation Buttons -->
+    <Button fx:id="goToBillingButton" alignment="CENTER" contentDisplay="CENTER" onAction="#handleGoToBilling" styleClass="button-Billing" text="Go to Billing" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+    <Button fx:id="addNewCustomerButton" onAction="#handleAddNewCustomer" styleClass="button-AddCustomer" text="Add New Customer" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+    <Button fx:id="goToAccessoriesButton" onAction="#handleGoToAccessories" styleClass="button-Accessories" text="Add Accessories" GridPane.rowIndex="5" />
+    <Button fx:id="goToServiceDetailsButton" onAction="#handleGoToServiceDetails" styleClass="button-ServiceDetails" text="Add Service Details" GridPane.rowIndex="4" />
 
     <!-- Back Button -->
-    <Button text="Back" fx:id="backButton" onAction="#handleBack" GridPane.rowIndex="4" GridPane.columnIndex="0" />
+    <Button fx:id="backButton" onAction="#handleBack" styleClass="button-secondary" text="Back" GridPane.columnSpan="2" GridPane.rowIndex="6" />
+    <TextField fx:id="serviceNameField" promptText="Customer Name" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="1" />
 </GridPane>
-
