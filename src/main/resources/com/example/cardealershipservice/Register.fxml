@@ -12,7 +12,6 @@
         <Label text="Register an Account" styleClass="title-label" />
         <TextField fx:id="emailField" promptText="Email" styleClass="input-field" />
         <PasswordField fx:id="passwordField" promptText="Password" styleClass="input-field" />
-        <Button fx:id="registerButton" text="Register" styleClass="register-button" />
+        <Button fx:id="registerButton" text="Register" styleClass="register-button" onAction="#handleRegisterAction" />
     </VBox>
 </AnchorPane>
-
