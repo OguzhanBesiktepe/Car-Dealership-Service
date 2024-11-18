@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="15" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.cardealershipservice.AddServiceDetailsController" stylesheets="@styles.css">
+    <Label text="Add Service Details" styleClass="label-title" />
+
+    <TextField fx:id="serviceDetailField" promptText="Service Detail" styleClass="text-field" />
+    <TextField fx:id="serviceCostField" promptText="Cost" styleClass="text-field" />
+    <Button text="Add Service Detail" onAction="#handleAddServiceDetail" styleClass="button-primary" />
+
+    <VBox fx:id="serviceDetailList" spacing="10">
+        <!-- Added service details will appear here -->
+    </VBox>
+
+    <Button text="Back to Queue" onAction="#handleBack" styleClass="button-secondary" />
+</VBox>

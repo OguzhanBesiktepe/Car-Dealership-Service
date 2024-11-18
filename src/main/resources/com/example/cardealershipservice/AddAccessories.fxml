@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="15" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.cardealershipservice.AddAccessoriesController" stylesheets="@styles.css">
+    <Label text="Add Accessories" styleClass="label-title" />
+
+    <TextField fx:id="accessoryNameField" promptText="Accessory Name" styleClass="text-field" />
+    <TextField fx:id="accessoryPriceField" promptText="Price" styleClass="text-field" />
+    <Button text="Add Accessory" onAction="#handleAddAccessory" styleClass="button-primary" />
+
+    <VBox fx:id="accessoryList" spacing="10">
+        <!-- Added accessories will appear here -->
+    </VBox>
+
+    <Button text="Back to Queue" onAction="#handleBack" styleClass="button-secondary" />
+</VBox>
