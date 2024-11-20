@@ -54,7 +54,7 @@
     <!-- Another HBox used to center the back button -->
     <HBox alignment="CENTER">
         <!-- Button to go back to the previous page. The 'onAction' is linked to the 'handleBack' method in the controller. -->
-        <Button fx:id="backButton" text="Log Out" onAction="#handleBack" styleClass="button-secondary" />
+        <Button fx:id="backButton" text="Log out" onAction="#handleBack" styleClass="button-secondary" />
     </HBox>
 
 </VBox>
