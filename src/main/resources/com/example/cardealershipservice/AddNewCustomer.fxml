@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<?import javafx.scene.control.*?>
+<!-- Himal comment -->
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox spacing="15" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.cardealershipservice.AddNewCustomerController" stylesheets="@styles.css">
-    <Label text="Add New Customer" styleClass="label-title" />
+<VBox alignment="CENTER" spacing="15" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cardealershipservice.AddNewCustomerController">
+    <!-- Header Title -->
+    <Label styleClass="label-title" text="Add New Customer" />
 
-    <TextField fx:id="nameField" promptText="First , Last Name" styleClass="text-field" />
+    <!-- Input Fields for Customer Details -->
+    <TextField fx:id="nameField" prefHeight="27.0" prefWidth="429.0" promptText="First, Last Name" styleClass="text-field" />
     <TextField fx:id="contactInfoField" promptText="Contact Information" styleClass="text-field" />
     <TextField fx:id="carModelField" promptText="Car Model" styleClass="text-field" />
     <TextField fx:id="vinField" promptText="VIN Number" styleClass="text-field" />
     <TextField fx:id="mileageField" promptText="Mileage" styleClass="text-field" />
 
-    <Button text="Confirm" fx:id="confirmButton" onAction="#handleConfirm" styleClass="button-primary" />
-    <Button text="Back" fx:id="backButton" onAction="#handleBack" styleClass="button-secondary" />
+    <!-- Action Buttons -->
+    <Button fx:id="confirmButton" onAction="#handleConfirm" styleClass="button-primary" text="Confirm" />
+    <Button fx:id="backButton" onAction="#handleBack" styleClass="button-secondary" text="Back" />
 </VBox>

@@ -1,58 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- commented himal -->
 
+<!-- Importing JavaFX components for layout and controls -->
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<GridPane alignment="CENTER" hgap="15" stylesheets="@styles.css" vgap="15" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cardealershipservice.ServiceQueueController">
+<!-- The root VBox container organizes all the UI elements vertically.
+     It has a CENTER alignment and a spacing of 20px between elements. -->
+<VBox alignment="CENTER" spacing="20" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cardealershipservice.ServiceQueueController">
 
-    <!-- Column and Row Constraints for Scaling -->
-    <columnConstraints>
-        <ColumnConstraints percentWidth="50" />
-        <ColumnConstraints percentWidth="50" />
-    </columnConstraints>
-    <rowConstraints>
-        <RowConstraints percentHeight="10.0" />
-        <RowConstraints percentHeight="10.0" />
-        <RowConstraints percentHeight="10.0" />
-        <RowConstraints percentHeight="30.0" />
-        <RowConstraints percentHeight="10.0" />
-        <RowConstraints percentHeight="10.0" />
-        <RowConstraints percentHeight="10.0" />
-    </rowConstraints>
+    <!-- Title Section -->
+    <!-- Label displaying the title of the page with a custom styleClass for styling -->
+    <Label text="Car Dealership Service Queue" styleClass="label-title" alignment="CENTER" />
 
-    <VBox alignment="CENTER" prefHeight="670.0" prefWidth="166.0" spacing="20" GridPane.rowSpan="4">
-        <Label styleClass="label-section" text="Waiting for Service" />
-         <TextField fx:id="waitingNameField" promptText="Customer Name" styleClass="text-field" />
-        <HBox alignment="TOP_CENTER" spacing="15">
-            <Button fx:id="addWaitingButton" onAction="#handleAddToWaiting" styleClass="button-primary" text="Add to Waiting" />
-        </HBox>
-        <VBox fx:id="waitingList" spacing="10">
-            <!-- Waiting customers will be added dynamically here -->
+    <!-- Right Section: Service Queue -->
+    <VBox alignment="TOP_CENTER" spacing="15">
+        <!-- Label indicating the section for the Service Queue -->
+        <Label text="Service Queue" styleClass="label-section" />
+
+        <!-- TextField for entering a customer name, allowing users to type in the name of the customer. -->
+        <TextField fx:id="serviceNameField" promptText="Enter Customer Name" styleClass="text-field" />
+
+        <!-- Button to add the customer to the service queue. It triggers the 'handleAddToService' method when clicked. -->
+        <Button fx:id="addServiceButton" text="Add to Service" onAction="#handleAddToService" styleClass="button-primary" />
+
+        <!-- VBox that will display the list of customers who are currently in the service queue. -->
+        <VBox fx:id="serviceList" spacing="10" styleClass="list-box">
+            <!-- This VBox will be populated dynamically with the service queue items (customers). -->
         </VBox>
     </VBox>
-    <VBox fx:id="serviceList" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="3">
-      <children>
-          <Button fx:id="addServiceButton" onAction="#handleAddToService" prefHeight="42.0" prefWidth="471.0" styleClass="button-primary" text="Add to Service">
-            <padding>
-               <Insets bottom="100.0" />
-            </padding>
-         </Button>
-      </children></VBox>
 
-    <!-- Navigation Buttons -->
-    <Button fx:id="goToBillingButton" alignment="CENTER" contentDisplay="CENTER" onAction="#handleGoToBilling" styleClass="button-Billing" text="Go to Billing" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-    <Button fx:id="addNewCustomerButton" onAction="#handleAddNewCustomer" styleClass="button-AddCustomer" text="Add New Customer" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-    <Button fx:id="goToAccessoriesButton" onAction="#handleGoToAccessories" styleClass="button-Accessories" text="Add Accessories" GridPane.rowIndex="5" />
-    <Button fx:id="goToServiceDetailsButton" onAction="#handleGoToServiceDetails" styleClass="button-ServiceDetails" text="Add Service Details" GridPane.rowIndex="4" />
+    <!-- Middle Section: Navigation Buttons -->
+    <!-- HBox used for horizontally arranging navigation buttons with a spacing of 20px -->
+    <HBox alignment="CENTER" spacing="20">
+        <!-- Button to add a new customer to the service queue -->
+        <Button fx:id="addNewCustomerButton" text="Add New Customer" onAction="#handleAddNewCustomer" styleClass="button-AddCustomer" />
 
-    <!-- Back Button -->
-    <Button fx:id="backButton" onAction="#handleBack" styleClass="button-secondary" text="Back" GridPane.columnSpan="2" GridPane.rowIndex="6" />
-    <TextField fx:id="serviceNameField" promptText="Customer Name" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-</GridPane>
+        <!-- Button to navigate to the accessories page -->
+        <Button fx:id="goToAccessoriesButton" text="Add Accessories" onAction="#handleGoToAccessories" styleClass="button-Accessories" />
+
+        <!-- Button to navigate to the service details page -->
+        <Button fx:id="goToServiceDetailsButton" text="Add Service Details" onAction="#handleGoToServiceDetails" styleClass="button-ServiceDetails" />
+
+        <!-- Button to proceed to the billing page -->
+        <Button fx:id="goToBillingButton" text="Proceed to Billing" onAction="#handleGoToBilling" styleClass="button-Billing" />
+    </HBox>
+
+    <!-- Bottom Section: Back Button -->
+    <!-- Another HBox used to center the back button -->
+    <HBox alignment="CENTER">
+        <!-- Button to go back to the previous page. The 'onAction' is linked to the 'handleBack' method in the controller. -->
+        <Button fx:id="backButton" text="Back" onAction="#handleBack" styleClass="button-secondary" />
+    </HBox>
+
+</VBox>
