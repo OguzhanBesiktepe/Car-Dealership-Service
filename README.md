@@ -1,18 +1,8 @@
-# 📝 Scrum Standup Update (11/17/2024) (Waleed, Oguzhan, Himal, Jordan, Khalid)
+Implemented navigation between ServiceQueue and AddServiceDetails pages 🚗➡️🛠️
 
-## ✅ What did you accomplish since the last meeting?
-- 🛠️ Set up basic user functionality for creating accounts and logging into the app.
-- 🔒 Implemented a password reset screen that sends a reset link to the user's email.
-- 🎨 Started basic styling for the app, including experimenting with colors and button designs.
-- 🧩 Fixed an issue with merging into the `Main` branch, ensuring the latest code is accessible for all team members.
-
-## 🚀 What will you work on today?
-- 🔧 Fix the layout of the **ServiceQueue screen**, as it currently has a broken layout.
-- 🌐 Integrate Firebase properly to work with all app elements.
-- 🖌️ Refine the styling further, focusing on consistency and improving UI/UX.
-- 🔄 Continue testing the password reset functionality for edge cases.
-
-## 🚧 What, if anything, is blocking your progress?
-- ⚠️ The **ServiceQueue screen layout** issue is a major blocker that needs immediate attention.
-- 🐛 Firebase integration still requires debugging to function correctly with existing app elements.
-- 🤝 Coordination may be a challenge; everyone needs to share their changes on Discord before merging to prevent conflicts in the codebase.
+- Added handleGoToServiceDetails() in ServiceQueueController to navigate to AddServiceDetails.fxml 🔄
+- Implemented handleBack() in ServiceQueueController to navigate back from ServiceQueue to AddServiceDetails 🔙
+- Updated ServiceQueue.fxml with correct button actions for navigating to AddServiceDetails 🔘
+- Ensured button IDs and controller method names are consistent 🔧
+- Adjusted scene loading logic in ServiceQueueController for seamless navigation 🎬
+- Updated FXML files and controller logic to maintain proper flow between ServiceQueue and AddServiceDetails pages 🔄📄
