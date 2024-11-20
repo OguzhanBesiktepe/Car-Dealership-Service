@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox spacing="15" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.cardealershipservice.AddAccessoriesController" stylesheets="@styles.css">
-    <Label text="Add Accessories" styleClass="label-title" />
+<VBox alignment="CENTER" spacing="15" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cardealershipservice.AddAccessoriesController">
+    <!-- Title Section -->
+    <Label styleClass="label-title" text="Add Accessories" />
 
+    <!-- Accessory Name and Price Fields -->
     <TextField fx:id="accessoryNameField" promptText="Accessory Name" styleClass="text-field" />
     <TextField fx:id="accessoryPriceField" promptText="Price" styleClass="text-field" />
-    <Button text="Add Accessory" onAction="#handleAddAccessory" styleClass="button-primary" />
 
+    <!-- Button to Add Accessories -->
+    <Button onAction="#handleAddAccessory" styleClass="button-primary" text="Add Accessory" />
+
+    <!-- List of Added Accessories -->
     <VBox fx:id="accessoryList" spacing="10">
         <!-- Added accessories will appear here -->
     </VBox>
 
-    <Button text="Back to Queue" onAction="#handleBack" styleClass="button-secondary" />
+    <!-- Back to Service Queue Button -->
+    <Button fx:id="backButton" onAction="#handleBackToQueue" styleClass="button-secondary" text="Back to Queue" />
 </VBox>

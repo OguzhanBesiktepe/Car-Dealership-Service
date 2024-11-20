@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a25fd20d-f5d3-4b34-93a6-c10846495ffe" name="Changes" comment="Started Stylizing webpages using CSS &amp; Scene Builder. Implemented Firebase to work properly with Forgot Password Screen. With this also coded up a Register Page to allow users to make a new user (with email address and password). Edited code to be more versatile with current buttons and functionality.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/AddAccessoriesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/AddAccessoriesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/AddNewCustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/AddNewCustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/BillingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/BillingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/ServiceQueueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/ServiceQueueController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/Register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/Register.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/AddServiceDetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/AddServiceDetailsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/AddAccessories.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/AddAccessories.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/AddNewCustomer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/AddNewCustomer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/AddServiceDetails.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/AddServiceDetails.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/ServiceQueue.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/ServiceQueue.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,12 +41,12 @@
     &quot;assignee&quot;: &quot;waleedsh02&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/OguzhanBesiktepe/Car-Dealership-Service.git&quot;,
-    &quot;accountId&quot;: &quot;df94e80d-66a5-452e-986c-34dd1be56fee&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/OguzhanBesiktepe/Car-Dealership-Service.git",
+    "accountId": "44a9443a-4363-4616-a2cc-b06af27976de"
   }
-}</component>
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -60,30 +59,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HelloApplication.executor": "Run",
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/satis/Downloads/Car-Dealership-Service",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/satis/Downloads/Car-Dealership-Service&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\walee\IdeaProjects\Car-Dealership-Service\src\main\resources\com\example\cardealershipservice" />
@@ -107,8 +106,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
       </set>
     </attachedChunks>
   </component>
@@ -141,6 +140,7 @@
       <workItem from="1731852459960" duration="331000" />
       <workItem from="1731883447903" duration="863000" />
       <workItem from="1731887613287" duration="1946000" />
+      <workItem from="1732123049650" duration="226000" />
     </task>
     <task id="LOCAL-00001" summary="Base Commit">
       <option name="closed" value="true" />

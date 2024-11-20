@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<!-- commented himal -->
+<!-- Import necessary JavaFX components for the UI -->
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.VBox?>
 
+<!-- VBox layout to organize the UI elements vertically with a 15px spacing between them -->
 <VBox spacing="15" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.cardealershipservice.AddServiceDetailsController" stylesheets="@styles.css">
+    <!-- Label that displays the title of the page "Add Service Details" with a custom style -->
     <Label text="Add Service Details" styleClass="label-title" />
 
+    <!-- TextField for entering the service detail description.
+         The 'fx:id' is the identifier used to link this TextField to the controller.
+         The 'promptText' provides a placeholder inside the field. -->
     <TextField fx:id="serviceDetailField" promptText="Service Detail" styleClass="text-field" />
+
+    <!-- TextField for entering the cost of the service. Similar to the previous TextField. -->
     <TextField fx:id="serviceCostField" promptText="Cost" styleClass="text-field" />
+
+    <!-- Button to add the service detail. The 'onAction' attribute binds the button's action to the 'handleAddServiceDetail' method in the controller. -->
     <Button text="Add Service Detail" onAction="#handleAddServiceDetail" styleClass="button-primary" />
 
+    <!-- VBox to hold the list of service details. New service details will be added as labels inside this VBox. -->
     <VBox fx:id="serviceDetailList" spacing="10">
-        <!-- Added service details will appear here -->
+        <!-- The added service details will appear here dynamically as Labels are created in the controller -->
     </VBox>
 
-    <Button text="Back to Queue" onAction="#handleBack" styleClass="button-secondary" />
+    <!-- Button to navigate back to the service queue.
+         The 'onAction' attribute binds the button's action to the 'handleBack' method in the controller. -->
+    <Button fx:id="backButton" text="Back to Queue" onAction="#handleBack" styleClass="button-secondary" />
+
 </VBox>
