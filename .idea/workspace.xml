@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a25fd20d-f5d3-4b34-93a6-c10846495ffe" name="Changes" comment="Started Stylizing webpages using CSS &amp; Scene Builder. Implemented Firebase to work properly with Forgot Password Screen. With this also coded up a Register Page to allow users to make a new user (with email address and password). Edited code to be more versatile with current buttons and functionality.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_17_2024_9_22_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_17_2024_9_22_AM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/AddNewCustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/AddNewCustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/BillingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/BillingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/FirestoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/FirestoreService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/ServiceQueueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/ServiceQueueController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/Register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/Register.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/AddNewCustomer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/AddNewCustomer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/ServiceQueue.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/ServiceQueue.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +67,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Oguzhan",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/satis/Downloads/Car-Dealership-Service",

@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.VBox?>
 
 <VBox spacing="15" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.cardealershipservice.AddNewCustomerController" stylesheets="@styles.css">
+    <!-- Title -->
     <Label text="Add New Customer" styleClass="label-title" />
 
-    <TextField fx:id="nameField" promptText="First , Last Name" styleClass="text-field" />
+    <!-- Input Fields -->
+    <TextField fx:id="nameField" promptText="First, Last Name" styleClass="text-field" />
     <TextField fx:id="contactInfoField" promptText="Contact Information" styleClass="text-field" />
     <TextField fx:id="carModelField" promptText="Car Model" styleClass="text-field" />
     <TextField fx:id="vinField" promptText="VIN Number" styleClass="text-field" />
     <TextField fx:id="mileageField" promptText="Mileage" styleClass="text-field" />
 
-    <Button text="Confirm" fx:id="confirmButton" onAction="#handleConfirm" styleClass="button-primary" />
-    <Button text="Back" fx:id="backButton" onAction="#handleBack" styleClass="button-secondary" />
+    <!-- Buttons -->
+        <Button text="Confirm" fx:id="confirmButton" onAction="#handleConfirm" styleClass="button-primary" />
+        <Button text="Back" fx:id="backButton" onAction="#handleBack" styleClass="button-secondary" />
 </VBox>

@@ -1,7 +1,6 @@
 package com.example.cardealershipservice;
 
-
-
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -12,6 +11,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.fxml.FXMLLoader;
 
+import java.util.List;
+import java.util.concurrent.CompletableFuture;
+
+import com.google.gson.JsonObject;
+
 public class ServiceQueueController {
 
     @FXML
@@ -19,15 +23,32 @@ public class ServiceQueueController {
     @FXML
     private TextField serviceNameField;
     @FXML
+    private TextField searchField;
+    @FXML
     private VBox waitingList;
     @FXML
     private VBox serviceList;
+    @FXML
+    private VBox searchResults;
+    @FXML
+    private Button addNewCustomerButton; // Ensure this matches fx:id in FXML
     @FXML
     private Button goToBillingButton;
     @FXML
     private Button goToAccessoriesButton;
     @FXML
     private Button goToServiceDetailsButton;
+
+    private FirestoreService firestoreService;
+
+    public ServiceQueueController() {
+        firestoreService = new FirestoreService();
+    }
+
+    @FXML
+    private void initialize() {
+        // Initialization logic if needed
+    }
 
     @FXML
     private void handleAddToWaiting() {
@@ -50,59 +71,70 @@ public class ServiceQueueController {
     }
 
     @FXML
-    private void handleGoToBilling() {
-        try {
-            Parent billingPage = FXMLLoader.load(getClass().getResource("/com/example/cardealershipservice/Billing.fxml"));
-            Stage currentStage = (Stage) goToBillingButton.getScene().getWindow();
-            currentStage.setScene(new Scene(billingPage));
-            currentStage.show();
-        } catch (Exception e) {
-            e.printStackTrace();
+    private void handleSearch() {
+        String name = searchField.getText();
+        if (name.isEmpty()) {
+            searchResults.getChildren().clear();
+            searchResults.getChildren().add(new Label("Please enter a name to search."));
+            return;
         }
+
+        searchResults.getChildren().clear();
+
+        CompletableFuture.runAsync(() -> {
+            try {
+                List<JsonObject> customers = firestoreService.searchCustomerByName(name);
+                Platform.runLater(() -> {
+                    if (customers.isEmpty()) {
+                        searchResults.getChildren().add(new Label("No customers found with the name: " + name));
+                    } else {
+                        for (JsonObject customer : customers) {
+                            Label customerLabel = new Label(
+                                    "Name: " + customer.get("name").getAsJsonObject().get("stringValue").getAsString() +
+                                            ", Contact: " + customer.get("contactInfo").getAsJsonObject().get("stringValue").getAsString() +
+                                            ", Car Model: " + customer.get("carModel").getAsJsonObject().get("stringValue").getAsString()
+                            );
+                            searchResults.getChildren().add(customerLabel);
+                        }
+                    }
+                });
+            } catch (Exception e) {
+                e.printStackTrace();
+                Platform.runLater(() -> searchResults.getChildren().add(new Label("Error searching for customers.")));
+            }
+        });
     }
 
     @FXML
     private void handleAddNewCustomer() {
-        try {
-            Parent addNewCustomerPage = FXMLLoader.load(getClass().getResource("/com/example/cardealershipservice/AddNewCustomer.fxml"));
-            Stage currentStage = (Stage) goToBillingButton.getScene().getWindow();
-            currentStage.setScene(new Scene(addNewCustomerPage));
-            currentStage.show();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        loadScene("/com/example/cardealershipservice/AddNewCustomer.fxml");
+    }
+
+    @FXML
+    private void handleGoToBilling() {
+        loadScene("/com/example/cardealershipservice/Billing.fxml");
     }
 
     @FXML
     private void handleGoToAccessories() {
-        try {
-            Parent accessoriesPage = FXMLLoader.load(getClass().getResource("/com/example/cardealershipservice/AddAccessories.fxml"));
-            Stage currentStage = (Stage) goToAccessoriesButton.getScene().getWindow();
-            currentStage.setScene(new Scene(accessoriesPage));
-            currentStage.show();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        loadScene("/com/example/cardealershipservice/AddAccessories.fxml");
     }
 
     @FXML
     private void handleGoToServiceDetails() {
-        try {
-            Parent serviceDetailsPage = FXMLLoader.load(getClass().getResource("/com/example/cardealershipservice/AddServiceDetails.fxml"));
-            Stage currentStage = (Stage) goToServiceDetailsButton.getScene().getWindow();
-            currentStage.setScene(new Scene(serviceDetailsPage));
-            currentStage.show();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        loadScene("/com/example/cardealershipservice/AddServiceDetails.fxml");
     }
 
     @FXML
     private void handleBack() {
+        loadScene("/com/example/cardealershipservice/Login-page.fxml");
+    }
+
+    private void loadScene(String fxmlPath) {
         try {
-            Parent loginPage = FXMLLoader.load(getClass().getResource("/com/example/cardealershipservice/Login-page.fxml"));
-            Stage currentStage = (Stage) goToBillingButton.getScene().getWindow();
-            currentStage.setScene(new Scene(loginPage));
+            Parent page = FXMLLoader.load(getClass().getResource(fxmlPath));
+            Stage currentStage = (Stage) addNewCustomerButton.getScene().getWindow();
+            currentStage.setScene(new Scene(page));
             currentStage.show();
         } catch (Exception e) {
             e.printStackTrace();
