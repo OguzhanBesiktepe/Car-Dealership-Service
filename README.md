@@ -1,4 +1,4 @@
-# 📝 Scrum Standup Update (11/17/2024) (Waleed, Ozhan, Himal, Jordan
+# 📝 Scrum Standup Update (11/17/2024) (Waleed, Oguzhan, Himal, Jordan, Khalid)
 
 ## ✅ What did you accomplish since the last meeting?
 - 🛠️ Set up basic user functionality for creating accounts and logging into the app.
