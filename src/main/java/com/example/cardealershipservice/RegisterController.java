@@ -12,15 +12,15 @@ import javafx.fxml.FXMLLoader;
 public class RegisterController {
 
     @FXML
-    private TextField emailField;
+    TextField emailField;
 
     @FXML
-    private PasswordField passwordField;
+    PasswordField passwordField;
 
     private FirebaseAuthService firebaseAuthService = new FirebaseAuthService();
 
     @FXML
-    private void handleRegisterAction() {
+    void handleRegisterAction() {
         String email = emailField.getText();
         String password = passwordField.getText();
 
