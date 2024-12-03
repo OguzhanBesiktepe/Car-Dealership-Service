@@ -1,60 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- commented himal -->
 
+<!-- commented himal -->
 <!-- Importing JavaFX components for layout and controls -->
-<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
 
 <!-- The root VBox container organizes all the UI elements vertically.
      It has a CENTER alignment and a spacing of 20px between elements. -->
-<VBox alignment="CENTER" spacing="20" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cardealershipservice.ServiceQueueController">
 
-    <!-- Title Section -->
-    <!-- Label displaying the title of the page with a custom styleClass for styling -->
-    <Label text="Car Dealership Service Queue" styleClass="label-title" alignment="CENTER" />
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cardealershipservice.ServiceQueueController">
+    <children>
+        <Group>
+            <children>
+                <Pane layoutX="1.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" style="-fx-background-color: lightyellow;">
+                    <children>
+                        <!-- Label indicating the section for the Service Queue -->
+                        <Label layoutX="289.0" layoutY="128.0" styleClass="label-section" text="Service Queue">
+                            <font>
+                                <Font name="Georgia Bold" size="32.0" />
+                            </font>
+                            <textFill>
+                                <LinearGradient endX="1.0" endY="0.7424242397149403" startX="1.0" startY="0.11742422074982617">
+                                    <stops>
+                                        <Stop>
+                                            <color>
+                                                <Color red="0.13988304138183594" green="0.3353606164455414" blue="0.7263157963752747" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="1.0">
+                                            <color>
+                                                <Color red="0.7647058963775635" green="0.8980392217636108" blue="0.3529411852359772" />
+                                            </color>
+                                        </Stop>
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                        </Label>
 
-    <!-- Right Section: Service Queue -->
-    <VBox alignment="TOP_CENTER" spacing="15">
-        <!-- Label indicating the section for the Service Queue -->
-        <Label text="Service Queue" styleClass="label-section" />
+                        <!-- TextField for entering a customer name, allowing users to type in the name of the customer. -->
+                        <TextField fx:id="serviceNameField" alignment="CENTER" layoutX="101.0" layoutY="202.0" prefHeight="43.0" prefWidth="611.0" promptText="Enter Customer Name" style="-fx-background-radius: 40; -fx-background-color: transparent; -fx-border-radius: 100; -fx-border-color: black; -fx-border-width: 0.5;" styleClass="text-field">
+                            <font>
+                                <Font name="Georgia" size="16.0" />
+                            </font>
+                        </TextField>
 
-        <!-- TextField for entering a customer name, allowing users to type in the name of the customer. -->
-        <TextField fx:id="serviceNameField" promptText="Enter Customer Name" styleClass="text-field" />
+                        <!-- Button to add the customer to the service queue. It triggers the 'handleAddToService' method when clicked. -->
+                        <Button fx:id="addServiceButton" alignment="CENTER" layoutX="298.0" layoutY="275.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#handleAddToService" prefHeight="43.0" prefWidth="214.0" style="-fx-font-family: georgia; -fx-background-color: linear-gradient(to top, orange, grey);; -fx-background-radius: 100;" styleClass="button-primary" text="Add to Service" textFill="WHITE">
+                            <font>
+                                <Font name="Georgia" size="16.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="DEFAULT" />
+                            </cursor>
+                        </Button>
+                        <!-- Button to add a new customer to the service queue -->
+                        <Button fx:id="addNewCustomerButton" alignment="CENTER" layoutX="42.0" layoutY="351.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#handleAddNewCustomer" prefHeight="43.0" prefWidth="214.0" style="-fx-font-family: georgia; -fx-background-color: linear-gradient(to top, orange, grey);; -fx-background-radius: 100;" styleClass="button-AddCustomer" text="Add New Customer" textFill="WHITE">
+                            <font>
+                                <Font name="Georgia" size="16.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="DEFAULT" />
+                            </cursor>
+                        </Button>
 
-        <!-- Button to add the customer to the service queue. It triggers the 'handleAddToService' method when clicked. -->
-        <Button fx:id="addServiceButton" text="Add to Service" onAction="#handleAddToService" styleClass="button-primary" />
+                        <!-- Button to navigate to the accessories page -->
+                        <Button fx:id="goToAccessoriesButton" alignment="CENTER" layoutX="298.0" layoutY="351.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#handleGoToAccessories" prefHeight="43.0" prefWidth="214.0" style="-fx-font-family: georgia; -fx-background-color: linear-gradient(to top, orange, grey);; -fx-background-radius: 100;" styleClass="button-Accessories" text="Add Accessories" textFill="WHITE">
+                            <font>
+                                <Font name="Georgia" size="16.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="DEFAULT" />
+                            </cursor>
+                        </Button>
 
-        <!-- VBox that will display the list of customers who are currently in the service queue. -->
-        <VBox fx:id="serviceList" spacing="10" styleClass="list-box">
-            <!-- This VBox will be populated dynamically with the service queue items (customers). -->
-        </VBox>
-    </VBox>
+                        <!-- Button to navigate to the service details page -->
+                        <Button fx:id="goToServiceDetailsButton" alignment="CENTER" layoutX="555.0" layoutY="351.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#handleGoToServiceDetails" prefHeight="43.0" prefWidth="214.0" style="-fx-font-family: georgia; -fx-background-color: linear-gradient(to top, orange, grey);; -fx-background-radius: 100;" styleClass="button-ServiceDetails" text="Add Service Details" textFill="WHITE">
+                            <font>
+                                <Font name="Georgia" size="16.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="DEFAULT" />
+                            </cursor>
+                        </Button>
 
-    <!-- Middle Section: Navigation Buttons -->
-    <!-- HBox used for horizontally arranging navigation buttons with a spacing of 20px -->
-    <HBox alignment="CENTER" spacing="20">
-        <!-- Button to add a new customer to the service queue -->
-        <Button fx:id="addNewCustomerButton" text="Add New Customer" onAction="#handleAddNewCustomer" styleClass="button-AddCustomer" />
-
-        <!-- Button to navigate to the accessories page -->
-        <Button fx:id="goToAccessoriesButton" text="Add Accessories" onAction="#handleGoToAccessories" styleClass="button-Accessories" />
-
-        <!-- Button to navigate to the service details page -->
-        <Button fx:id="goToServiceDetailsButton" text="Add Service Details" onAction="#handleGoToServiceDetails" styleClass="button-ServiceDetails" />
-
-        <!-- Button to proceed to the billing page -->
-        <Button fx:id="goToBillingButton" text="Proceed to Billing" onAction="#handleGoToBilling" styleClass="button-Billing" />
-    </HBox>
-
-    <!-- Bottom Section: Back Button -->
-    <!-- Another HBox used to center the back button -->
-    <HBox alignment="CENTER">
-        <!-- Button to go back to the previous page. The 'onAction' is linked to the 'handleBack' method in the controller. -->
-        <Button fx:id="backButton" text="Log out" onAction="#handleBack" styleClass="button-secondary" />
-    </HBox>
-
-</VBox>
+                        <!-- Button to proceed to the billing page -->
+                        <Button fx:id="goToBillingButton" alignment="CENTER" layoutX="300.0" layoutY="420.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#handleGoToBilling" prefHeight="43.0" prefWidth="214.0" style="-fx-font-family: georgia; -fx-background-color: linear-gradient(to top, orange, grey);; -fx-background-radius: 100;" styleClass="button-Billing" text="Proceed to Billing" textFill="WHITE">
+                            <font>
+                                <Font name="Georgia" size="16.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="DEFAULT" />
+                            </cursor>
+                        </Button>
+                        <!-- Button to go back to the previous page. The 'onAction' is linked to the 'handleBack' method in the controller. -->
+                        <Button fx:id="backButton" alignment="CENTER" layoutX="300.0" layoutY="486.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#handleBack" prefHeight="43.0" prefWidth="214.0" style="-fx-font-family: georgia; -fx-background-color: linear-gradient(to top, orange, grey);; -fx-background-radius: 100;" styleClass="button-secondary" text="Log out" textFill="WHITE">
+                            <font>
+                                <Font name="Georgia" size="16.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="DEFAULT" />
+                            </cursor>
+                        </Button>
+                        <Label alignment="CENTER" layoutX="7.0" layoutY="14.0" prefHeight="65.0" prefWidth="785.0" styleClass="label-title" text="Car Dealership Service Queue">
+                            <font>
+                                <Font name="Georgia Bold" size="50.0" />
+                            </font>
+                            <textFill>
+                                <LinearGradient endX="1.0" endY="0.8333333387519374" startX="1.0" startY="0.25378783543904626">
+                                    <stops>
+                                        <Stop>
+                                            <color>
+                                                <Color red="0.4034307897090912" green="0.4514099955558777" blue="0.5473684072494507" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="1.0">
+                                            <color>
+                                                <Color red="0.7568627595901489" green="0.9058823585510254" blue="0.3450980484485626" />
+                                            </color>
+                                        </Stop>
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                        </Label>
+                    </children>
+                </Pane>
+            </children>
+        </Group>
+    </children>
+</AnchorPane>

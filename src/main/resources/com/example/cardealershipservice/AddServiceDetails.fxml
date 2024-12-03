@@ -7,6 +7,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
@@ -16,53 +17,73 @@
 
 <!-- VBox layout to organize the UI elements vertically with a 15px spacing between them -->
 
-<Group xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cardealershipservice.AddServiceDetailsController">
-   <children>
-      <Pane prefHeight="575.0" prefWidth="855.0" style="-fx-background-color: lightyellow; visibility: 30;">
-         <children>
-             <!-- Label that displays the title of the page "Add Service Details" with a custom style -->
-             <Label alignment="CENTER" contentDisplay="CENTER" layoutX="200.0" layoutY="35.0" prefHeight="45.0" prefWidth="455.0" styleClass="label-title" text="Add Service Details">
-               <font>
-                  <Font name="Georgia Bold" size="38.0" />
-               </font>
-               <textFill>
-                  <LinearGradient endX="1.0" endY="0.7689393885207898" startX="1.0" startY="0.3371212337956284">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color red="0.7894737124443054" green="0.14327485859394073" blue="0.14327485859394073" />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color red="0.13208577036857605" green="0.17071084678173065" blue="0.46315789222717285" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </textFill>
-            </Label>
-         
-                                  <!-- TextField for entering the service detail description.
-                  The 'fx:id' is the identifier used to link this TextField to the controller.
-                                       The 'promptText' provides a placeholder inside the field. -->
-             <TextField fx:id="serviceDetailField" alignment="CENTER" layoutX="232.0" layoutY="159.0" maxWidth="-Infinity" prefHeight="30.0" prefWidth="400.0" promptText="Service Detail" style="-fx-border-radius: 100; -fx-background-color: lightyetransparentllow; -fx-border-width: 0.5; -fx-border-color: black;" styleClass="text-field" />
-         
-                                  <!-- Button to add the service detail. The 'onAction' attribute binds the button's action to the 'handleAddServiceDetail' method in the controller. -->
-             <Button layoutX="332.0" layoutY="339.0" onAction="#handleAddServiceDetail" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: lightsteelblue; -fx-background-radius: 100;" text="Add Service Detail" />
-         
-                                  <!-- TextField for entering the cost of the service. Similar to the previous TextField. -->
-             <TextField fx:id="serviceCostField" alignment="CENTER" layoutX="232.0" layoutY="226.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="400.0" promptText="Cost" style="-fx-border-radius: 100; -fx-background-color: lightyetransparentllow; -fx-border-width: 0.5; -fx-border-color: black;" styleClass="text-field" />
-         
-                                  <!-- VBox to hold the list of service details. New service details will be added as labels inside this VBox. -->
-             <VBox fx:id="serviceDetailList" spacing="10">
-        <!-- The added service details will appear here dynamically as Labels are created in the controller -->
-    </VBox>
-         
-                                  <!-- Button to navigate back to the service queue.
-                  The 'onAction' attribute binds the button's action to the 'handleBack' method in the controller. -->
-             <Button fx:id="backButton" layoutX="332.0" layoutY="429.0" onAction="#handleBack" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: lightsteelblue; -fx-background-radius: 100;" text="Back to Queue" />
-         </children>
-      </Pane>
-   </children>
-</Group>
+<AnchorPane prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cardealershipservice.AddServiceDetailsController">
+    <children>
+        <Group>
+            <children>
+                <Pane prefHeight="575.0" prefWidth="855.0" style="-fx-background-color: lightyellow;">
+                    <children>
+                        <!-- Label that displays the title of the page "Add Service Details" with a custom style -->
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="160.0" layoutY="38.0" prefHeight="57.0" prefWidth="545.0" styleClass="label-title" text="Add Service Details">
+                            <font>
+                                <Font name="Georgia Bold" size="50.0" />
+                            </font>
+                            <textFill>
+                                <LinearGradient endX="1.0" endY="0.7689393885207898" startX="1.0" startY="0.3371212337956284">
+                                    <stops>
+                                        <Stop>
+                                            <color>
+                                                <Color red="0.7894737124443054" green="0.14327485859394073" blue="0.14327485859394073" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="1.0">
+                                            <color>
+                                                <Color red="0.13208577036857605" green="0.17071084678173065" blue="0.46315789222717285" />
+                                            </color>
+                                        </Stop>
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                        </Label>
+
+                        <!-- TextField for entering the service detail description.
+        The 'fx:id' is the identifier used to link this TextField to the controller.
+                             The 'promptText' provides a placeholder inside the field. -->
+                        <TextField fx:id="serviceDetailField" alignment="CENTER" layoutX="232.0" layoutY="159.0" maxWidth="-Infinity" prefHeight="30.0" prefWidth="400.0" promptText="Service Detail" style="-fx-border-radius: 100; -fx-background-color: lightyetransparentllow; -fx-border-width: 0.5; -fx-border-color: black;" styleClass="text-field">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </TextField>
+
+                        <!-- Button to add the service detail. The 'onAction' attribute binds the button's action to the 'handleAddServiceDetail' method in the controller. -->
+                        <Button layoutX="332.0" layoutY="339.0" onAction="#handleAddServiceDetail" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to top, purple, lightgreen);; -fx-background-radius: 100;" text="Add Service Detail" textFill="WHITE">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Button>
+
+                        <!-- TextField for entering the cost of the service. Similar to the previous TextField. -->
+                        <TextField fx:id="serviceCostField" alignment="CENTER" layoutX="232.0" layoutY="226.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="400.0" promptText="Cost" style="-fx-border-radius: 100; -fx-background-color: lightyetransparentllow; -fx-border-width: 0.5; -fx-border-color: black;" styleClass="text-field">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </TextField>
+
+                        <!-- VBox to hold the list of service details. New service details will be added as labels inside this VBox. -->
+                        <VBox fx:id="serviceDetailList" spacing="10">
+                            <!-- The added service details will appear here dynamically as Labels are created in the controller -->
+                        </VBox>
+
+                        <!-- Button to navigate back to the service queue.
+        The 'onAction' attribute binds the button's action to the 'handleBack' method in the controller. -->
+                        <Button fx:id="backButton" layoutX="332.0" layoutY="429.0" onAction="#handleBack" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to top, purple, lightgreen);; -fx-background-radius: 100;" text="Back to Queue" textFill="WHITE">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </Pane>
+            </children>
+        </Group>
+    </children>
+</AnchorPane>

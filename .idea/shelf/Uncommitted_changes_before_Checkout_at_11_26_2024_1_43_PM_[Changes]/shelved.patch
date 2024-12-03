@@ -1,0 +1,128 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"a25fd20d-f5d3-4b34-93a6-c10846495ffe\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"FxmlFile\" />\r\n        <option value=\"JavaFXApplication\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"Waleed\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;waleedsh02&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/OguzhanBesiktepe/Car-Dealership-Service.git&quot;,\r\n    &quot;accountId&quot;: &quot;44a9443a-4363-4616-a2cc-b06af27976de&quot;\r\n  }\r\n}</component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 5\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2m79OMTLCu5HSqaZwZabm6jxtsO\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Application.HelloApplication.executor\": \"Run\",\r\n    \"Application.Main.executor\": \"Run\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"git-widget-placeholder\": \"Himal__Branch\",\r\n    \"ignore.virus.scanning.warn.message\": \"true\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Users/satis/Downloads/Car-Dealership-Service\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"project.structure.last.edited\": \"Modules\",\r\n    \"project.structure.proportion\": \"0.15\",\r\n    \"project.structure.side.proportion\": \"0.0\",\r\n    \"settings.editor.selected.configurable\": \"reference.settings.project.maven.repository.indices\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\walee\\IdeaProjects\\Car-Dealership-Service\\src\\main\\resources\\com\\example\\cardealershipservice\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.example.cardealershipservice.Main\" />\r\n      <module name=\"Car-Dealership-Service\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.example.cardealershipservice.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103\" />\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"a25fd20d-f5d3-4b34-93a6-c10846495ffe\" name=\"Changes\" comment=\"\" />\r\n      <created>1726416715325</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1726416715325</updated>\r\n      <workItem from=\"1726416716360\" duration=\"58000\" />\r\n      <workItem from=\"1728516917188\" duration=\"1428000\" />\r\n      <workItem from=\"1728518366647\" duration=\"10482000\" />\r\n      <workItem from=\"1729008469622\" duration=\"149000\" />\r\n      <workItem from=\"1729009767840\" duration=\"1293000\" />\r\n      <workItem from=\"1729044618658\" duration=\"19000\" />\r\n      <workItem from=\"1729113433818\" duration=\"1277000\" />\r\n      <workItem from=\"1730695153033\" duration=\"4686000\" />\r\n      <workItem from=\"1730704692875\" duration=\"1615000\" />\r\n      <workItem from=\"1730706325430\" duration=\"399000\" />\r\n      <workItem from=\"1730706744595\" duration=\"1037000\" />\r\n      <workItem from=\"1730707787638\" duration=\"4001000\" />\r\n      <workItem from=\"1730831656139\" duration=\"158000\" />\r\n      <workItem from=\"1730999255755\" duration=\"194000\" />\r\n      <workItem from=\"1731000950028\" duration=\"1488000\" />\r\n      <workItem from=\"1731296863601\" duration=\"1652000\" />\r\n      <workItem from=\"1731810641457\" duration=\"3102000\" />\r\n      <workItem from=\"1731813763142\" duration=\"6894000\" />\r\n      <workItem from=\"1731852459960\" duration=\"331000\" />\r\n      <workItem from=\"1731883447903\" duration=\"863000\" />\r\n      <workItem from=\"1731887613287\" duration=\"1946000\" />\r\n      <workItem from=\"1732123049650\" duration=\"226000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Base Commit\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1726416757068</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1726416757068</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Initial Front end design\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1728528518603</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1728528518603</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Initial Front end design\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1728528528629</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1728528528629</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"4\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Base Commit\" />\r\n    <MESSAGE value=\"Initial Front end design\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 62bc1a5e498444a1bb9635e9fdbc4c06e9e925b7)
++++ b/.idea/workspace.xml	(date 1732646557449)
+@@ -4,7 +4,15 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="a25fd20d-f5d3-4b34-93a6-c10846495ffe" name="Changes" comment="" />
++    <list default="true" id="a25fd20d-f5d3-4b34-93a6-c10846495ffe" name="Changes" comment="Started Stylizing webpages using CSS &amp; Scene Builder. Implemented Firebase to work properly with Forgot Password Screen. With this also coded up a Register Page to allow users to make a new user (with email address and password). Edited code to be more versatile with current buttons and functionality.">
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_26_2024_12_58_PM_[Changes]1/shelved.patch" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_26_2024_12_58_PM__Changes_1.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/LoginController.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/Main.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cartoon Car.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/Login-page.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/Login-page.fxml" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -13,16 +21,16 @@
+   <component name="FileTemplateManagerImpl">
+     <option name="RECENT_TEMPLATES">
+       <list>
+-        <option value="FxmlFile" />
+         <option value="JavaFXApplication" />
+         <option value="Class" />
++        <option value="FxmlFile" />
+       </list>
+     </option>
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="Waleed" />
++        <entry key="$PROJECT_DIR$" value="main" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -36,7 +44,7 @@
+   <component name="GithubPullRequestsUISettings">{
+   &quot;selectedUrlAndAccountId&quot;: {
+     &quot;url&quot;: &quot;https://github.com/OguzhanBesiktepe/Car-Dealership-Service.git&quot;,
+-    &quot;accountId&quot;: &quot;44a9443a-4363-4616-a2cc-b06af27976de&quot;
++    &quot;accountId&quot;: &quot;3b915715-a105-4727-9f08-5149783d6dc9&quot;
+   }
+ }</component>
+   <component name="MarkdownSettingsMigration">
+@@ -59,12 +67,13 @@
+     "Application.Main.executor": "Run",
+     "RunOnceActivity.OpenProjectViewOnStart": "true",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
++    "RunOnceActivity.git.unshallow": "true",
+     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+     "WebServerToolWindowFactoryState": "false",
+-    "git-widget-placeholder": "Himal__Branch",
++    "git-widget-placeholder": "main",
+     "ignore.virus.scanning.warn.message": "true",
+     "kotlin-language-version-configured": "true",
+-    "last_opened_file_path": "C:/Users/satis/Downloads/Car-Dealership-Service",
++    "last_opened_file_path": "C:/Users/khali/Downloads/Car-Dealership-Service/target/classes/com/example/cardealershipservice/Login-page.fxml",
+     "node.js.detected.package.eslint": "true",
+     "node.js.detected.package.tslint": "true",
+     "node.js.selected.package.eslint": "(autodetect)",
+@@ -78,8 +87,18 @@
+   }
+ }]]></component>
+   <component name="RecentsManager">
++    <key name="CreateClassDialog.RecentsKey">
++      <recent name="com.example.cardealershipservice" />
++    </key>
++    <key name="CopyFile.RECENT_KEYS">
++      <recent name="C:\Users\khali\Downloads\Car-Dealership-Service\src\main\resources\Images" />
++    </key>
+     <key name="MoveFile.RECENT_KEYS">
+-      <recent name="C:\Users\walee\IdeaProjects\Car-Dealership-Service\src\main\resources\com\example\cardealershipservice" />
++      <recent name="C:\Users\khali\Downloads\Car-Dealership-Service\src\main\resources\com\example\cardealershipservice" />
++      <recent name="C:\Users\khali\Downloads\Car-Dealership-Service\target\classes\com\example\cardealershipservice" />
++      <recent name="C:\Users\khali\Downloads\Car-Dealership-Service\target\classes" />
++      <recent name="C:\Users\khali\Downloads\Car-Dealership-Service\src\main\resources" />
++      <recent name="C:\Users\khali\Downloads\Car-Dealership-Service\src\main\resources\com\example\cardealershipservice\Fonts" />
+     </key>
+   </component>
+   <component name="RunManager">
+@@ -100,8 +119,8 @@
+   <component name="SharedIndexes">
+     <attachedChunks>
+       <set>
+-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
++        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
++        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+       </set>
+     </attachedChunks>
+   </component>
+@@ -134,7 +153,15 @@
+       <workItem from="1731852459960" duration="331000" />
+       <workItem from="1731883447903" duration="863000" />
+       <workItem from="1731887613287" duration="1946000" />
+-      <workItem from="1732123049650" duration="226000" />
++      <workItem from="1732053252031" duration="847000" />
++      <workItem from="1732209765837" duration="59000" />
++      <workItem from="1732209977295" duration="53000" />
++      <workItem from="1732210106575" duration="218000" />
++      <workItem from="1732210327691" duration="4359000" />
++      <workItem from="1732503769079" duration="17000" />
++      <workItem from="1732581133367" duration="1583000" />
++      <workItem from="1732583654345" duration="302000" />
++      <workItem from="1732641999900" duration="4134000" />
+     </task>
+     <task id="LOCAL-00001" summary="Base Commit">
+       <option name="closed" value="true" />
+@@ -180,6 +207,6 @@
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Base Commit" />
+     <MESSAGE value="Initial Front end design" />
+-    <option name="LAST_COMMIT_MESSAGE" value="" />
++    <option name="LAST_COMMIT_MESSAGE" value="Initial Front end design" />
+   </component>
+ </project>
+\ No newline at end of file

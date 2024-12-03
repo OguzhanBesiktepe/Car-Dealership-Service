@@ -1,17 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.cardealershipservice.RegisterController"
-            prefHeight="400.0" prefWidth="600.0"
-            stylesheets="@styles.css">
-    <VBox alignment="CENTER" spacing="10.0" layoutX="150.0" layoutY="100.0">
-        <Label text="Register an Account" styleClass="title-label" />
-        <TextField fx:id="emailField" promptText="Email" styleClass="input-field" />
-        <PasswordField fx:id="passwordField" promptText="Password" styleClass="input-field" />
-        <Button fx:id="registerButton" text="Register" styleClass="register-button" onAction="#handleRegisterAction" />
-    </VBox>
+<AnchorPane prefHeight="550.0" prefWidth="800.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cardealershipservice.RegisterController">
+    <Pane layoutX="-3.0" layoutY="-1.0" prefHeight="550.0" prefWidth="800.0" style="-fx-background-color: lightyellow;">
+        <children>
+            <Label alignment="CENTER" layoutX="181.0" layoutY="146.0" style="-fx-font-family: georgia;" styleClass="title-label" text="Register Account">
+                <font>
+                    <Font name="Georgia Bold" size="50.0" />
+                </font>
+                <textFill>
+                    <LinearGradient endX="1.0" endY="0.8522727326913313" startX="1.0" startY="0.34469698414658057">
+                        <stops>
+                            <Stop>
+                                <color>
+                                    <Color red="0.1565999984741211" green="0.5799999833106995" blue="0.36238959431648254" />
+                                </color>
+                            </Stop>
+                            <Stop offset="1.0">
+                                <color>
+                                    <Color red="0.7627913951873779" green="0.29426899552345276" blue="0.7789473533630371" />
+                                </color>
+                            </Stop>
+                        </stops>
+                    </LinearGradient>
+                </textFill>
+            </Label>
+            <TextField fx:id="emailField" alignment="CENTER" layoutX="271.0" layoutY="232.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="250.0" promptText="Email" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0.5; -fx-border-radius: 100;" styleClass="input-field">
+                <font>
+                    <Font size="16.0" />
+                </font></TextField>
+            <PasswordField fx:id="passwordField" alignment="CENTER" focusTraversable="false" layoutX="271.0" layoutY="293.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="250.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0.5; -fx-border-radius: 100;" styleClass="input-field">
+                <cursor>
+                    <Cursor fx:constant="TEXT" />
+                </cursor>
+                <font>
+                    <Font size="16.0" />
+                </font>
+            </PasswordField>
+            <Button fx:id="registerButton" alignment="CENTER" layoutX="289.0" layoutY="362.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#handleRegisterAction" prefHeight="43.0" prefWidth="214.0" style="-fx-background-color: linear-gradient(to top, red, grey);; -fx-background-radius: 100;" styleClass="register-button" text="Register" textFill="WHITE">
+                <font>
+                    <Font size="16.0" />
+                </font></Button>
+        </children>
+    </Pane>
 </AnchorPane>
