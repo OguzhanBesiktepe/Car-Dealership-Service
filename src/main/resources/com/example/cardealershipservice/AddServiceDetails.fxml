@@ -1,32 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!-- commented himal -->
 <!-- Import necessary JavaFX components for the UI -->
-<?import javafx.scene.control.*?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
 
 <!-- VBox layout to organize the UI elements vertically with a 15px spacing between them -->
-<VBox spacing="15" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.cardealershipservice.AddServiceDetailsController" stylesheets="@styles.css">
-    <!-- Label that displays the title of the page "Add Service Details" with a custom style -->
-    <Label text="Add Service Details" styleClass="label-title" />
 
-    <!-- TextField for entering the service detail description.
-         The 'fx:id' is the identifier used to link this TextField to the controller.
-         The 'promptText' provides a placeholder inside the field. -->
-    <TextField fx:id="serviceDetailField" promptText="Service Detail" styleClass="text-field" />
-
-    <!-- TextField for entering the cost of the service. Similar to the previous TextField. -->
-    <TextField fx:id="serviceCostField" promptText="Cost" styleClass="text-field" />
-
-    <!-- Button to add the service detail. The 'onAction' attribute binds the button's action to the 'handleAddServiceDetail' method in the controller. -->
-    <Button text="Add Service Detail" onAction="#handleAddServiceDetail" styleClass="button-primary" />
-
-    <!-- VBox to hold the list of service details. New service details will be added as labels inside this VBox. -->
-    <VBox fx:id="serviceDetailList" spacing="10">
+<Group xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cardealershipservice.AddServiceDetailsController">
+   <children>
+      <Pane prefHeight="575.0" prefWidth="855.0" style="-fx-background-color: lightyellow; visibility: 30;">
+         <children>
+             <!-- Label that displays the title of the page "Add Service Details" with a custom style -->
+             <Label alignment="CENTER" contentDisplay="CENTER" layoutX="200.0" layoutY="35.0" prefHeight="45.0" prefWidth="455.0" styleClass="label-title" text="Add Service Details">
+               <font>
+                  <Font name="Georgia Bold" size="38.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="0.7689393885207898" startX="1.0" startY="0.3371212337956284">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.7894737124443054" green="0.14327485859394073" blue="0.14327485859394073" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.13208577036857605" green="0.17071084678173065" blue="0.46315789222717285" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         
+                                  <!-- TextField for entering the service detail description.
+                  The 'fx:id' is the identifier used to link this TextField to the controller.
+                                       The 'promptText' provides a placeholder inside the field. -->
+             <TextField fx:id="serviceDetailField" alignment="CENTER" layoutX="232.0" layoutY="159.0" maxWidth="-Infinity" prefHeight="30.0" prefWidth="400.0" promptText="Service Detail" style="-fx-border-radius: 100; -fx-background-color: lightyetransparentllow; -fx-border-width: 0.5; -fx-border-color: black;" styleClass="text-field" />
+         
+                                  <!-- Button to add the service detail. The 'onAction' attribute binds the button's action to the 'handleAddServiceDetail' method in the controller. -->
+             <Button layoutX="332.0" layoutY="339.0" onAction="#handleAddServiceDetail" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: lightsteelblue; -fx-background-radius: 100;" text="Add Service Detail" />
+         
+                                  <!-- TextField for entering the cost of the service. Similar to the previous TextField. -->
+             <TextField fx:id="serviceCostField" alignment="CENTER" layoutX="232.0" layoutY="226.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="400.0" promptText="Cost" style="-fx-border-radius: 100; -fx-background-color: lightyetransparentllow; -fx-border-width: 0.5; -fx-border-color: black;" styleClass="text-field" />
+         
+                                  <!-- VBox to hold the list of service details. New service details will be added as labels inside this VBox. -->
+             <VBox fx:id="serviceDetailList" spacing="10">
         <!-- The added service details will appear here dynamically as Labels are created in the controller -->
     </VBox>
-
-    <!-- Button to navigate back to the service queue.
-         The 'onAction' attribute binds the button's action to the 'handleBack' method in the controller. -->
-    <Button fx:id="backButton" text="Back to Queue" onAction="#handleBack" styleClass="button-secondary" />
-
-</VBox>
+         
+                                  <!-- Button to navigate back to the service queue.
+                  The 'onAction' attribute binds the button's action to the 'handleBack' method in the controller. -->
+             <Button fx:id="backButton" layoutX="332.0" layoutY="429.0" onAction="#handleBack" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: lightsteelblue; -fx-background-radius: 100;" text="Back to Queue" />
+         </children>
+      </Pane>
+   </children>
+</Group>

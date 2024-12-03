@@ -1,76 +1,85 @@
 package com.example.cardealershipservice;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.TextField;
-import javafx.scene.control.Button;
-import javafx.stage.Stage;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.fxml.FXMLLoader;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
+import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
+import java.util.Optional;
 
 public class AddNewCustomerController {
-
-    // Declare text fields for customer data input
     @FXML
-    private TextField nameField;         // Field for customer's name
+    private TextField nameField;
     @FXML
-    private TextField contactInfoField;  // Field for customer's contact information
+    private TextField contactInfoField;
     @FXML
-    private TextField carModelField;     // Field for customer's car model
+    private TextField carModelField;
     @FXML
-    private TextField vinField;          // Field for customer's car VIN (Vehicle Identification Number)
+    private TextField vinField;
     @FXML
-    private TextField mileageField;      // Field for the car's mileage
-
-    // Create an instance of FirestoreService to interact with Firestore (database)
+    private TextField mileageField;
     private FirestoreService firestoreService = new FirestoreService();
-
-    // Declare the confirm button which triggers saving customer data
     @FXML
     private Button confirmButton;
 
-    // Handle the action when the confirm button is clicked
+    public AddNewCustomerController() {
+    }
+
     @FXML
     private void handleConfirm() {
         try {
-            // Retrieve the text entered in the fields
+            // Retrieve user input
             String name = nameField.getText();
             String contactInfo = contactInfoField.getText();
             String carModel = carModelField.getText();
             String vin = vinField.getText();
             String mileage = mileageField.getText();
 
-            // Call FirestoreService to save customer data to Firestore
+            // Check if any field is empty
+            if (name.isEmpty() || contactInfo.isEmpty() || carModel.isEmpty() || vin.isEmpty() || mileage.isEmpty()) {
+                // Show warning alert
+                Alert alert = new Alert(Alert.AlertType.WARNING);
+                alert.setTitle("Incomplete Data");
+                alert.setHeaderText("Some fields are empty");
+                alert.setContentText("Do you still want to proceed with saving the data?");
+
+                // Add buttons for user decision
+                ButtonType proceedButton = new ButtonType("Proceed");
+                ButtonType cancelButton = new ButtonType("Cancel");
+                alert.getButtonTypes().setAll(proceedButton, cancelButton);
+
+                // Wait for user response
+                Optional<ButtonType> result = alert.showAndWait();
+
+                // Handle user response
+                if (result.isPresent() && result.get() == cancelButton) {
+                    System.out.println("Operation canceled by user.");
+                    return; // Stop further execution
+                }
+            }
+
+            // Save data to Firestore if user confirms
             firestoreService.addCustomer(name, contactInfo, carModel, vin, mileage);
-
-            // Print a success message to the console
             System.out.println("Customer data saved successfully.");
-
-            // Navigate back to the ServiceQueue screen after saving data
             handleBack();
         } catch (Exception e) {
-            // Print any errors that occur during the process
             e.printStackTrace();
         }
     }
 
-    // Handle the action when the back button is clicked (navigating to ServiceQueue)
     @FXML
     private void handleBack() {
         try {
-            // Load the ServiceQueue.fxml file which represents the service queue page
             Parent serviceQueuePage = FXMLLoader.load(getClass().getResource("/com/example/cardealershipservice/ServiceQueue.fxml"));
-
-            // Get the current stage (window) from the confirmButton's scene
             Stage currentStage = (Stage) confirmButton.getScene().getWindow();
-
-            // Set the scene of the current stage to the service queue page
             currentStage.setScene(new Scene(serviceQueuePage));
-
-            // Show the service queue page
             currentStage.show();
         } catch (Exception e) {
-            // Print any errors that occur during scene transition
             e.printStackTrace();
         }
     }
