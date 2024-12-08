@@ -5,15 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a25fd20d-f5d3-4b34-93a6-c10846495ffe" name="Changes" comment="Khalid Front End Implementation">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/Logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/Logotitle.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/AddAccessories.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/AddAccessories.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/AddNewCustomer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/AddNewCustomer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/AddServiceDetails.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/AddServiceDetails.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/dark-mode.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/BillingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/BillingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/StudentTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/ThemeManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/ThemeSwitchable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/ThemeToggleApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/ThemeToggleAppWithStudentTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/ThemeToggleButton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/ThemeToggleFeature.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/Billing.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/Billing.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/Login-page.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/Login-page.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/Register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/Register.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/ServiceQueue.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/ServiceQueue.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +38,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Khalid" />
+        <entry key="$PROJECT_DIR$" value="Himal_Branch" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -75,7 +81,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Himal-Feature-DarkMode",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/khali/Downloads/Car-Dealership-Service/src/main/resources/com/example/cardealershipservice",

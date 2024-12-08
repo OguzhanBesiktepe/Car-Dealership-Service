@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -11,7 +12,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="550.0" prefWidth="800.0" style="-fx-background-color: lightyellow;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cardealershipservice.LoginController">
+<AnchorPane fx:id="rootPane" prefHeight="550.0" prefWidth="800.0" style="-fx-background-color: lightyellow;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cardealershipservice.LoginController">
     <children>
         <Pane layoutX="-1.600000023841858" layoutY="-0.8" prefHeight="547.0" prefWidth="810.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="73.0" AnchorPane.topAnchor="-1.0">
             <children>
@@ -81,6 +82,13 @@
                         <ColorAdjust brightness="-0.3" />
                     </effect>
                 </ImageView>
+
+                <!-- Dark/Light Mode Toggle Button -->
+                <ToggleButton fx:id="themeToggleButton" layoutX="700.0" layoutY="20.0" text="Dark Mode" onAction="#handleThemeToggle" style="-fx-background-color: linear-gradient(to top, #6a5acd, #ff7f50); -fx-border-radius: 10; -fx-text-fill: white;">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ToggleButton>
             </children>
         </Pane>
     </children>

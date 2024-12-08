@@ -4,107 +4,46 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="550.0" prefWidth="800.0" style="-fx-background-color: lightyellow;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cardealershipservice.ServiceQueueController">
-    <children>
-        <Button fx:id="addWaitingButton" alignment="CENTER" layoutX="122.0" layoutY="194.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#handleAddToWaiting" prefHeight="43.0" prefWidth="214.0" style="-fx-background-color: linear-gradient(to top, #ff7f50, #89b183);; -fx-background-radius: 100;" styleClass="button-primary" text="Add to Waiting" textFill="WHITE">
-            <font>
-                <Font name="Georgia" size="16.0" />
-            </font>
-        </Button>
-        <TextField fx:id="waitingNameField" alignment="CENTER" layoutX="122.0" layoutY="133.0" prefWidth="214.0" promptText="Customer Name" style="-fx-border-color: black; -fx-border-radius: 100; -fx-border-width: 0.5; -fx-background-color: transparent;">
-            <font>
-                <Font name="Georgia" size="16.0" />
-            </font>
-        </TextField>
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: lightyellow;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cardealershipservice.BillingController">
 
-        <!-- Waiting for Service Section -->
-        <Label alignment="CENTER" layoutX="80.0" layoutY="58.0" prefHeight="60.0" prefWidth="298.0" styleClass="label-section" text="Waiting for Service">
-            <font>
-                <Font name="Georgia Bold" size="26.0" />
-            </font>
-            <textFill>
-                <LinearGradient endX="1.0" endY="0.7007575676296696" startX="1.0" startY="0.3863636652628581">
-                    <stops>
-                        <Stop>
-                            <color>
-                                <Color red="0.33060428500175476" green="0.5541065335273743" blue="0.557894766330719" />
-                            </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                            <color>
-                                <Color red="0.7263157963752747" green="0.17485380172729492" blue="0.17485380172729492" />
-                            </color>
-                        </Stop>
-                    </stops>
-                </LinearGradient>
-            </textFill>
-        </Label>
+    <!-- Header Section -->
+    <Pane prefHeight="80.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(to right, #ff7f50, #89b183);">
+        <children>
+            <Label layoutX="20.0" layoutY="20.0" text="Billing Page" style="-fx-font-size: 24px; -fx-font-family: Georgia; -fx-text-fill: white;"/>
+            <Button fx:id="backButton" layoutX="700.0" layoutY="20.0" prefHeight="30.0" prefWidth="70.0" text="Back" onAction="#handleBack" style="-fx-background-color: #ffffff; -fx-text-fill: #ff7f50; -fx-border-color: #ff7f50; -fx-border-radius: 10; -fx-background-radius: 10;" />
+        </children>
+    </Pane>
 
-        <!-- Currently in Service Section -->
-        <Label alignment="CENTER" layoutX="422.0" layoutY="58.0" prefHeight="60.0" prefWidth="298.0" styleClass="label-section" text="Currently in Service">
-            <font>
-                <Font name="Georgia Bold" size="26.0" />
-            </font>
-            <textFill>
-                <LinearGradient endX="1.0" endY="0.7007575676296696" startX="1.0" startY="0.3863636652628581">
-                    <stops>
-                        <Stop>
-                            <color>
-                                <Color red="0.33060428500175476" green="0.5541065335273743" blue="0.557894766330719" />
-                            </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                            <color>
-                                <Color red="0.7263157963752747" green="0.17485380172729492" blue="0.17485380172729492" />
-                            </color>
-                        </Stop>
-                    </stops>
-                </LinearGradient>
-            </textFill>
-        </Label>
-        <TextField fx:id="serviceNameField" alignment="CENTER" layoutX="464.0" layoutY="133.0" prefWidth="214.0" promptText="Customer Name" style="-fx-border-color: black; -fx-border-radius: 100; -fx-border-width: 0.5; -fx-background-color: transparent;">
-            <font>
-                <Font name="Georgia" size="16.0" />
-            </font>
-        </TextField>
-        <Button fx:id="addServiceButton" alignment="CENTER" layoutX="464.0" layoutY="194.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#handleAddToService" prefHeight="43.0" prefWidth="214.0" style="-fx-background-color: linear-gradient(to top, #ff7f50, #89b183);; -fx-background-radius: 100;" styleClass="button-primary" text="Add to Service" textFill="WHITE">
-            <font>
-                <Font name="Georgia" size="16.0" />
-            </font>
-        </Button>
+    <!-- Main Content Section -->
+    <Pane layoutY="80.0" prefHeight="520.0" prefWidth="800.0" style="-fx-padding: 20;">
+        <children>
+            <!-- Customer Information -->
+            <Label layoutX="20.0" layoutY="20.0" text="Customer Details" style="-fx-font-size: 20px; -fx-font-family: Georgia Bold;" />
+            <TextField fx:id="customerNameField" layoutX="20.0" layoutY="60.0" prefHeight="30.0" prefWidth="300.0" promptText="Customer Name" style="-fx-border-radius: 10; -fx-border-color: #ff7f50; -fx-background-color: transparent; -fx-padding: 5;" />
+            <TextField fx:id="customerIDField" layoutX="340.0" layoutY="60.0" prefHeight="30.0" prefWidth="150.0" promptText="Customer ID" style="-fx-border-radius: 10; -fx-border-color: #ff7f50; -fx-background-color: transparent; -fx-padding: 5;" />
 
-        <!-- Navigation Buttons -->
-        <Button fx:id="goToBillingButton" alignment="CENTER" layoutX="122.0" layoutY="278.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#handleGoToBilling" prefHeight="43.0" prefWidth="214.0" style="-fx-background-color: linear-gradient(to top, #ff7f50, #89b183);; -fx-background-radius: 100;" styleClass="button-Billing" text="Go to Billing" textFill="WHITE">
-            <font>
-                <Font name="Georgia" size="16.0" />
-            </font>
-        </Button>
-        <Button fx:id="addNewCustomerButton" alignment="CENTER" layoutX="464.0" layoutY="278.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#handleAddNewCustomer" prefHeight="43.0" prefWidth="214.0" style="-fx-background-color: linear-gradient(to top, #ff7f50, #89b183);; -fx-background-radius: 100;" styleClass="button-AddCustomer" text="Add New Customer" textFill="WHITE">
-            <font>
-                <Font name="Georgia" size="16.0" />
-            </font>
-        </Button>
-        <Button fx:id="goToAccessoriesButton" alignment="CENTER" layoutX="122.0" layoutY="364.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#handleGoToAccessories" prefHeight="43.0" prefWidth="214.0" style="-fx-background-color: linear-gradient(to top, #ff7f50, #89b183);; -fx-background-radius: 100;" styleClass="button-Accessories" text="Add Accessories" textFill="WHITE">
-            <font>
-                <Font name="Georgia" size="16.0" />
-            </font>
-        </Button>
-        <Button fx:id="goToServiceDetailsButton" alignment="CENTER" layoutX="464.0" layoutY="364.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#handleGoToServiceDetails" prefHeight="43.0" prefWidth="214.0" style="-fx-background-color: linear-gradient(to top, #ff7f50, #89b183);; -fx-background-radius: 100;" styleClass="button-ServiceDetails" text="Add Service Details" textFill="WHITE">
-            <font>
-                <Font name="Georgia" size="16.0" />
-            </font>
-        </Button>
+            <!-- Item/Service Table Section -->
+            <Label layoutX="20.0" layoutY="120.0" text="Services/Items" style="-fx-font-size: 20px; -fx-font-family: Georgia Bold;" />
+            <TextField fx:id="serviceDescriptionField" layoutX="20.0" layoutY="160.0" prefHeight="30.0" prefWidth="300.0" promptText="Service/Item Description" style="-fx-border-radius: 10; -fx-border-color: #ff7f50; -fx-background-color: transparent; -fx-padding: 5;" />
+            <TextField fx:id="quantityField" layoutX="340.0" layoutY="160.0" prefHeight="30.0" prefWidth="100.0" promptText="Qty" style="-fx-border-radius: 10; -fx-border-color: #ff7f50; -fx-background-color: transparent; -fx-padding: 5;" />
+            <TextField fx:id="priceField" layoutX="460.0" layoutY="160.0" prefHeight="30.0" prefWidth="120.0" promptText="Price" style="-fx-border-radius: 10; -fx-border-color: #ff7f50; -fx-background-color: transparent; -fx-padding: 5;" />
+            <Button fx:id="addItemButton" layoutX="600.0" layoutY="160.0" prefHeight="30.0" prefWidth="80.0" text="Add" onAction="#handleAddItem" style="-fx-background-color: #ff7f50; -fx-text-fill: white; -fx-border-radius: 10; -fx-background-radius: 10;" />
 
-        <!-- Back Button -->
-        <Button fx:id="backButton" alignment="CENTER" layoutX="272.0" layoutY="449.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#handleBack" prefHeight="43.0" prefWidth="214.0" style="-fx-background-color: linear-gradient(to top, #ff7f50, #89b183);; -fx-background-radius: 100;" styleClass="button-secondary" text="Back" textFill="WHITE">
-            <font>
-                <Font name="Georgia" size="16.0" />
-            </font>
-        </Button>
-    </children>
+            <!-- Total Section -->
+            <Label layoutX="20.0" layoutY="220.0" text="Billing Summary" style="-fx-font-size: 20px; -fx-font-family: Georgia Bold;" />
+            <Label fx:id="subtotalLabel" layoutX="20.0" layoutY="260.0" text="Subtotal: $0.00" style="-fx-font-size: 16px;" />
+            <Label fx:id="taxLabel" layoutX="20.0" layoutY="290.0" text="Tax: $0.00" style="-fx-font-size: 16px;" />
+            <Label fx:id="totalLabel" layoutX="20.0" layoutY="320.0" text="Total: $0.00" style="-fx-font-size: 16px;" />
+
+            <!-- Payment Section -->
+            <Label layoutX="20.0" layoutY="380.0" text="Payment" style="-fx-font-size: 20px; -fx-font-family: Georgia Bold;" />
+            <Button fx:id="confirmPaymentButton" layoutX="20.0" layoutY="420.0" prefHeight="30.0" prefWidth="150.0" text="Confirm Payment" onAction="#handleConfirmPayment" style="-fx-background-color: #89b183; -fx-text-fill: white; -fx-border-radius: 10; -fx-background-radius: 10;" />
+        </children>
+    </Pane>
 </AnchorPane>
