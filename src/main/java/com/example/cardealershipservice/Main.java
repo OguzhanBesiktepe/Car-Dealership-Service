@@ -38,3 +38,4 @@ public class Main extends Application {
         launch(args);
     }
 }
+// this repo has updated and initial code to better understand the project.
