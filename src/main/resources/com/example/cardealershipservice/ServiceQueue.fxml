@@ -8,6 +8,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.paint.Color?>
@@ -18,11 +19,11 @@
 <!-- The root VBox container organizes all the UI elements vertically.
      It has a CENTER alignment and a spacing of 20px between elements. -->
 
-<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cardealershipservice.ServiceQueueController">
+<AnchorPane xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cardealershipservice.ServiceQueueController">
     <children>
         <Group>
             <children>
-                <Pane layoutX="1.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" style="-fx-background-color: lightyellow;">
+                <Pane fx:id="mainPane" layoutX="1.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" style="-fx-background-color: lightyellow;">
                     <children>
                         <!-- Label indicating the section for the Service Queue -->
                         <Label layoutX="289.0" layoutY="128.0" styleClass="label-section" text="Service Queue">
@@ -111,7 +112,16 @@
                                 <Cursor fx:constant="DEFAULT" />
                             </cursor>
                         </Button>
-                        <Label alignment="CENTER" layoutX="7.0" layoutY="14.0" prefHeight="65.0" prefWidth="785.0" styleClass="label-title" text="Car Dealership Service Queue">
+
+                        <!-- Dark/Light Mode Toggle Button -->
+                        <ToggleButton fx:id="themeToggleButton" layoutX="700.0" layoutY="20.0" onAction="#handleThemeToggle" style="-fx-background-color: linear-gradient(to top, #ffa500, #808080); -fx-border-radius: 10; -fx-text-fill: #808080;" text="Dark Mode">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </ToggleButton>
+
+
+                        <Label alignment="CENTER" layoutX="13.0" layoutY="57.0" prefHeight="65.0" prefWidth="785.0" styleClass="label-title" text="Car Dealership Service Queue">
                             <font>
                                 <Font name="Georgia Bold" size="50.0" />
                             </font>

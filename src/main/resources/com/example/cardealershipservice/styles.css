@@ -1,165 +1,165 @@
-.root {
-    -fx-font-family: "Segoe UI";
-    -fx-background-color: #c6b491;
+/*.root {*/
+/*    -fx-font-family: "Segoe UI";*/
+/*    -fx-background-color: #c6b491;*/
 
-}
+/*}*/
 
-.label-title {
-    -fx-font-size: 50px;
-    -fx-font-weight: bold;
-    -fx-text-fill: #333;
-}
+/*.label-title {*/
+/*    -fx-font-size: 50px;*/
+/*    -fx-font-weight: bold;*/
+/*    -fx-text-fill: #333;*/
+/*}*/
 
-.label-section {
-    -fx-font-size: 18px;
-    -fx-font-weight: bold;
-    -fx-text-fill: #555;
-    -fx-padding: 10 0 5 0;
-}
+/*.label-section {*/
+/*    -fx-font-size: 18px;*/
+/*    -fx-font-weight: bold;*/
+/*    -fx-text-fill: #555;*/
+/*    -fx-padding: 10 0 5 0;*/
+/*}*/
 
-.text-field, .password-field {
-    -fx-background-radius: 10;
-    -fx-border-radius: 10;
-    -fx-border-color: #05c8e5;
-    -fx-padding: 5 10 5 10;
-}
+/*.text-field, .password-field {*/
+/*    -fx-background-radius: 10;*/
+/*    -fx-border-radius: 10;*/
+/*    -fx-border-color: #05c8e5;*/
+/*    -fx-padding: 5 10 5 10;*/
+/*}*/
 
-.button-primary {
-    -fx-background-color: #157cd3; /* Base button color */
-    -fx-text-fill: #ffffff; /* White text for better contrast */
-    -fx-font-weight: bold; /* Bold text */
-    -fx-font-size: 14px; /* Slightly larger font size for readability */
-    -fx-background-radius: 12; /* Rounded corners */
-    -fx-border-radius: 12; /* Rounded border */
-    -fx-border-color: #8b6e4f; /* Slightly darker border to add depth */
-    -fx-border-width: 2; /* Border thickness */
-    -fx-padding: 10 30 10 30; /* Padding for a balanced button size */
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0, 2, 2); /* Subtle shadow effect */
-    -fx-cursor: hand; /* Changes the cursor to a pointer on hover */
-    -fx-transition: all 0.3s ease; /* Smooth transition for hover effect */
-}
+/*.button-primary {*/
+/*    -fx-background-color: #157cd3; !* Base button color *!*/
+/*    -fx-text-fill: #ffffff; !* White text for better contrast *!*/
+/*    -fx-font-weight: bold; !* Bold text *!*/
+/*    -fx-font-size: 14px; !* Slightly larger font size for readability *!*/
+/*    -fx-background-radius: 12; !* Rounded corners *!*/
+/*    -fx-border-radius: 12; !* Rounded border *!*/
+/*    -fx-border-color: #8b6e4f; !* Slightly darker border to add depth *!*/
+/*    -fx-border-width: 2; !* Border thickness *!*/
+/*    -fx-padding: 10 30 10 30; !* Padding for a balanced button size *!*/
+/*    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0, 2, 2); !* Subtle shadow effect *!*/
+/*    -fx-cursor: hand; !* Changes the cursor to a pointer on hover *!*/
+/*    -fx-transition: all 0.3s ease; !* Smooth transition for hover effect *!*/
+/*}*/
 
-/* Hover effect */
-.button-primary:hover {
-    -fx-background-color: #08385e; /* Slightly darker color on hover */
-    -fx-border-color: #251d14; /* Darker border on hover */
-}
+/*!* Hover effect *!*/
+/*.button-primary:hover {*/
+/*    -fx-background-color: #08385e; !* Slightly darker color on hover *!*/
+/*    -fx-border-color: #251d14; !* Darker border on hover *!*/
+/*}*/
 
-/* Pressed effect */
-.button-primary:pressed {
-    -fx-background-color: #8b6e4f; /* Even darker tone when pressed */
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 3, 0, 1, 1); /* Adjust shadow on press */
-}
+/*!* Pressed effect *!*/
+/*.button-primary:pressed {*/
+/*    -fx-background-color: #8b6e4f; !* Even darker tone when pressed *!*/
+/*    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 3, 0, 1, 1); !* Adjust shadow on press *!*/
+/*}*/
 
-.button-secondary {
-    -fx-background-color: #808080;
-    -fx-text-fill: white;
-    -fx-font-weight: bold;
-    -fx-background-radius: 10;
-    -fx-border-radius: 10;
-    -fx-padding: 10 20 10 20;
-}
+/*.button-secondary {*/
+/*    -fx-background-color: #808080;*/
+/*    -fx-text-fill: white;*/
+/*    -fx-font-weight: bold;*/
+/*    -fx-background-radius: 10;*/
+/*    -fx-border-radius: 10;*/
+/*    -fx-padding: 10 20 10 20;*/
+/*}*/
 
-.button-Billing {
-    -fx-background-color: #39e12f; /* Base button color */
-    -fx-text-fill: #ffffff; /* White text for better contrast */
-    -fx-font-weight: bold; /* Bold text */
-    -fx-font-size: 14px; /* Slightly larger font size for readability */
-    -fx-background-radius: 12; /* Rounded corners */
-    -fx-border-radius: 12; /* Rounded border */
-    -fx-border-color: #8b6e4f; /* Slightly darker border to add depth */
-    -fx-border-width: 2; /* Border thickness */
-    -fx-padding: 10 30 10 30; /* Padding for a balanced button size */
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0, 2, 2); /* Subtle shadow effect */
-    -fx-cursor: hand; /* Changes the cursor to a pointer on hover */
-    -fx-transition: all 0.3s ease; /* Smooth transition for hover effect */
-}
+/*.button-Billing {*/
+/*    -fx-background-color: #39e12f; !* Base button color *!*/
+/*    -fx-text-fill: #ffffff; !* White text for better contrast *!*/
+/*    -fx-font-weight: bold; !* Bold text *!*/
+/*    -fx-font-size: 14px; !* Slightly larger font size for readability *!*/
+/*    -fx-background-radius: 12; !* Rounded corners *!*/
+/*    -fx-border-radius: 12; !* Rounded border *!*/
+/*    -fx-border-color: #8b6e4f; !* Slightly darker border to add depth *!*/
+/*    -fx-border-width: 2; !* Border thickness *!*/
+/*    -fx-padding: 10 30 10 30; !* Padding for a balanced button size *!*/
+/*    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0, 2, 2); !* Subtle shadow effect *!*/
+/*    -fx-cursor: hand; !* Changes the cursor to a pointer on hover *!*/
+/*    -fx-transition: all 0.3s ease; !* Smooth transition for hover effect *!*/
+/*}*/
 
-/* Hover effect */
-.button-Billing:hover {
-    -fx-background-color: #14930b; /* Slightly darker color on hover */
-    -fx-border-color: #251d14; /* Darker border on hover */
-}
+/*!* Hover effect *!*/
+/*.button-Billing:hover {*/
+/*    -fx-background-color: #14930b; !* Slightly darker color on hover *!*/
+/*    -fx-border-color: #251d14; !* Darker border on hover *!*/
+/*}*/
 
-.button-Billing:pressed {
-    -fx-background-color: #8b6e4f; /* Even darker tone when pressed */
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 3, 0, 1, 1); /* Adjust shadow on press */
-}
+/*.button-Billing:pressed {*/
+/*    -fx-background-color: #8b6e4f; !* Even darker tone when pressed *!*/
+/*    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 3, 0, 1, 1); !* Adjust shadow on press *!*/
+/*}*/
 
-/* Circular Add New Customer Button */
+/*!* Circular Add New Customer Button *!*/
 
-.button-AddCustomer {
-    -fx-background-color: #09de80; /* Base button color */
-    -fx-text-fill: #ffffff; /* White text for better contrast */
-    -fx-font-weight: bold; /* Bold text */
-    -fx-font-size: 14px; /* Font size */
-    -fx-background-radius: 50%; /* Fully circular shape */
-    -fx-border-radius: 50%; /* Circular border */
-    -fx-border-color: #8b6e4f; /* Border color for depth */
-    -fx-border-width: 2; /* Border thickness */
-    -fx-padding: 10; /* Padding inside the button */
-    -fx-min-width: 150px; /* Increased width for text */
-    -fx-min-height: 150px; /* Increased height for circular shape */
-    -fx-max-width: 150px; /* Ensure fixed size */
-    -fx-max-height: 150px; /* Ensure fixed size */
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0, 2, 2); /* Subtle shadow effect */
-    -fx-cursor: hand; /* Pointer cursor on hover */
-    -fx-transition: all 0.3s ease; /* Smooth transition for hover effect */
-}
-
-
-.button-AddCustomer:hover {
-    -fx-background-color: #07c76f;
-    -fx-border-color: #6a523e;
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 8, 0, 3, 3);
-}
-
-.button-Accessories{
-    -fx-background-color: #09de80; /* Base button color */
-    -fx-text-fill: #ffffff; /* White text for better contrast */
-    -fx-font-weight: bold; /* Bold text */
-    -fx-font-size: 14px; /* Font size */
-    -fx-background-radius: 50%; /* Fully circular shape */
-    -fx-border-radius: 50%; /* Circular border */
-    -fx-border-color: #8b6e4f; /* Border color for depth */
-    -fx-border-width: 2; /* Border thickness */
-    -fx-padding: 10; /* Padding inside the button */
-    -fx-min-width: 150px; /* Increased width for text */
-    -fx-min-height: 150px; /* Increased height for circular shape */
-    -fx-max-width: 150px; /* Ensure fixed size */
-    -fx-max-height: 150px; /* Ensure fixed size */
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0, 2, 2); /* Subtle shadow effect */
-    -fx-cursor: hand; /* Pointer cursor on hover */
-    -fx-transition: all 0.3s ease; /* Smooth transition for hover effect */
-
-}
+/*.button-AddCustomer {*/
+/*    -fx-background-color: #09de80; !* Base button color *!*/
+/*    -fx-text-fill: #ffffff; !* White text for better contrast *!*/
+/*    -fx-font-weight: bold; !* Bold text *!*/
+/*    -fx-font-size: 14px; !* Font size *!*/
+/*    -fx-background-radius: 50%; !* Fully circular shape *!*/
+/*    -fx-border-radius: 50%; !* Circular border *!*/
+/*    -fx-border-color: #8b6e4f; !* Border color for depth *!*/
+/*    -fx-border-width: 2; !* Border thickness *!*/
+/*    -fx-padding: 10; !* Padding inside the button *!*/
+/*    -fx-min-width: 150px; !* Increased width for text *!*/
+/*    -fx-min-height: 150px; !* Increased height for circular shape *!*/
+/*    -fx-max-width: 150px; !* Ensure fixed size *!*/
+/*    -fx-max-height: 150px; !* Ensure fixed size *!*/
+/*    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0, 2, 2); !* Subtle shadow effect *!*/
+/*    -fx-cursor: hand; !* Pointer cursor on hover *!*/
+/*    -fx-transition: all 0.3s ease; !* Smooth transition for hover effect *!*/
+/*}*/
 
 
-.button-Accessories:hover {
-    -fx-background-color: #07c76f;
-    -fx-border-color: #6a523e;
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 8, 0, 3, 3);
-}
+/*.button-AddCustomer:hover {*/
+/*    -fx-background-color: #07c76f;*/
+/*    -fx-border-color: #6a523e;*/
+/*    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 8, 0, 3, 3);*/
+/*}*/
 
-.button-ServiceDetails{
-    -fx-background-color: #09de80; /* Base button color */
-    -fx-text-fill: #ffffff; /* White text for better contrast */
-    -fx-font-weight: bold; /* Bold text */
-    -fx-font-size: 14px; /* Font size */
-    -fx-background-radius: 50%; /* Fully circular shape */
-    -fx-border-radius: 50%; /* Circular border */
-    -fx-border-color: #8b6e4f; /* Border color for depth */
-    -fx-border-width: 2; /* Border thickness */
-    -fx-padding: 10; /* Padding inside the button */
-    -fx-min-width: 150px; /* Increased width for text */
-    -fx-min-height: 150px; /* Increased height for circular shape */
-    -fx-max-width: 150px; /* Ensure fixed size */
-    -fx-max-height: 150px; /* Ensure fixed size */
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0, 2, 2); /* Subtle shadow effect */
-    -fx-cursor: hand; /* Pointer cursor on hover */
-    -fx-transition: all 0.3s ease; /* Smooth transition for hover effect */
-}
+/*.button-Accessories{*/
+/*    -fx-background-color: #09de80; !* Base button color *!*/
+/*    -fx-text-fill: #ffffff; !* White text for better contrast *!*/
+/*    -fx-font-weight: bold; !* Bold text *!*/
+/*    -fx-font-size: 14px; !* Font size *!*/
+/*    -fx-background-radius: 50%; !* Fully circular shape *!*/
+/*    -fx-border-radius: 50%; !* Circular border *!*/
+/*    -fx-border-color: #8b6e4f; !* Border color for depth *!*/
+/*    -fx-border-width: 2; !* Border thickness *!*/
+/*    -fx-padding: 10; !* Padding inside the button *!*/
+/*    -fx-min-width: 150px; !* Increased width for text *!*/
+/*    -fx-min-height: 150px; !* Increased height for circular shape *!*/
+/*    -fx-max-width: 150px; !* Ensure fixed size *!*/
+/*    -fx-max-height: 150px; !* Ensure fixed size *!*/
+/*    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0, 2, 2); !* Subtle shadow effect *!*/
+/*    -fx-cursor: hand; !* Pointer cursor on hover *!*/
+/*    -fx-transition: all 0.3s ease; !* Smooth transition for hover effect *!*/
 
-.register-button{
+/*}*/
 
-}
+
+/*.button-Accessories:hover {*/
+/*    -fx-background-color: #07c76f;*/
+/*    -fx-border-color: #6a523e;*/
+/*    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 8, 0, 3, 3);*/
+/*}*/
+
+/*.button-ServiceDetails{*/
+/*    -fx-background-color: #09de80; !* Base button color *!*/
+/*    -fx-text-fill: #ffffff; !* White text for better contrast *!*/
+/*    -fx-font-weight: bold; !* Bold text *!*/
+/*    -fx-font-size: 14px; !* Font size *!*/
+/*    -fx-background-radius: 50%; !* Fully circular shape *!*/
+/*    -fx-border-radius: 50%; !* Circular border *!*/
+/*    -fx-border-color: #8b6e4f; !* Border color for depth *!*/
+/*    -fx-border-width: 2; !* Border thickness *!*/
+/*    -fx-padding: 10; !* Padding inside the button *!*/
+/*    -fx-min-width: 150px; !* Increased width for text *!*/
+/*    -fx-min-height: 150px; !* Increased height for circular shape *!*/
+/*    -fx-max-width: 150px; !* Ensure fixed size *!*/
+/*    -fx-max-height: 150px; !* Ensure fixed size *!*/
+/*    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0, 2, 2); !* Subtle shadow effect *!*/
+/*    -fx-cursor: hand; !* Pointer cursor on hover *!*/
+/*    -fx-transition: all 0.3s ease; !* Smooth transition for hover effect *!*/
+/*}*/
+
+/*.register-button{*/
+
+/*}*/

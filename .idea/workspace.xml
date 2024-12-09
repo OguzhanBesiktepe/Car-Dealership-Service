@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a25fd20d-f5d3-4b34-93a6-c10846495ffe" name="Changes" comment="Khalid Front End Implementation">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/Logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/Logotitle.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/AddAccessories.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/AddAccessories.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/AddNewCustomer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/AddNewCustomer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/AddServiceDetails.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/AddServiceDetails.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/Billing.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/Billing.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/Login-page.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/Login-page.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/Register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/Register.fxml" afterDir="false" />
+    <list default="true" id="a25fd20d-f5d3-4b34-93a6-c10846495ffe" name="Changes" comment="Himal :&#10;I have added a Dark mode to the login screen, i have changed the billing screen sturcutire">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/ServiceQueueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/ServiceQueueController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/ServiceQueue.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/ServiceQueue.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Khalid" />
+        <entry key="$PROJECT_DIR$" value="Himal_Branch" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -75,7 +69,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Himal-Feature-DarkMode",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/khali/Downloads/Car-Dealership-Service/src/main/resources/com/example/cardealershipservice",
@@ -186,7 +180,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733248122027</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Himal :&#10;I have added a Dark mode to the login screen, i have changed the billing screen sturcutire">
+      <option name="closed" value="true" />
+      <created>1733699616514</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733699616514</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Himal :&#10;I have added a Dark mode to the login screen, i have changed the billing screen sturcutire">
+      <option name="closed" value="true" />
+      <created>1733700515832</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733700515832</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +217,7 @@
     <MESSAGE value="Base Commit" />
     <MESSAGE value="Initial Front end design" />
     <MESSAGE value="Khalid Front End Implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Khalid Front End Implementation" />
+    <MESSAGE value="Himal :&#10;I have added a Dark mode to the login screen, i have changed the billing screen sturcutire" />
+    <option name="LAST_COMMIT_MESSAGE" value="Himal :&#10;I have added a Dark mode to the login screen, i have changed the billing screen sturcutire" />
   </component>
 </project>
