@@ -1,10 +1,10 @@
 package com.example.cardealershipservice;
 
-
-
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleButton;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
@@ -28,6 +28,29 @@ public class ServiceQueueController {
     private Button goToAccessoriesButton;
     @FXML
     private Button goToServiceDetailsButton;
+    @FXML
+    private Pane mainPane; // The root pane that will have its background color changed
+    @FXML
+    private ToggleButton themeToggleButton; // Reference to the theme toggle button
+    @FXML
+    private boolean isDarkMode = false; // Tracks the current theme state
+
+    @FXML
+    private void handleThemeToggle() {
+        // Toggle the theme state
+        isDarkMode = !isDarkMode;
+
+        // Apply dark or light theme styles
+        if (isDarkMode) {
+            mainPane.setStyle("-fx-background-color: #2B2B2B; -fx-text-fill: white;");
+            themeToggleButton.setText("Light Mode");
+            themeToggleButton.setStyle("-fx-background-color: linear-gradient(to top, #808080, #ffa500); -fx-border-radius: 10; -fx-text-fill: white;");
+        } else {
+            mainPane.setStyle("-fx-background-color: lightyellow; -fx-text-fill: black;");
+            themeToggleButton.setText("Dark Mode");
+            themeToggleButton.setStyle("-fx-background-color: linear-gradient(to top, #ffa500, #808080); -fx-border-radius: 10; -fx-text-fill: #808080;");
+        }
+    }
 
     @FXML
     private void handleAddToWaiting() {
@@ -100,7 +123,7 @@ public class ServiceQueueController {
     @FXML
     private void handleBack() {
         try {
-            Parent loginPage = FXMLLoader.load(getClass().getResource("/com/example/cardealershipservice/Login-page.fxml"));
+            Parent loginPage = FXMLLoader.load(getClass().getResource("/com/example/cardealershipservice/login-page.fxml"));
             Stage currentStage = (Stage) goToBillingButton.getScene().getWindow();
             currentStage.setScene(new Scene(loginPage));
             currentStage.show();

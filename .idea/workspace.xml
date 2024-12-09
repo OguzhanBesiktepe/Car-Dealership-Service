@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a25fd20d-f5d3-4b34-93a6-c10846495ffe" name="Changes" comment="Himal :&#10;I have added a Dark mode to the login screen, i have changed the billing screen sturcutire">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/ServiceQueueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cardealershipservice/ServiceQueueController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/ServiceQueue.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/cardealershipservice/ServiceQueue.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733699616514</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Himal :&#10;I have added a Dark mode to the login screen, i have changed the billing screen sturcutire">
+      <option name="closed" value="true" />
+      <created>1733700515832</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733700515832</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
